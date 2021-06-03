@@ -36,10 +36,11 @@ class Tester(TBase):
             for data in tqdm(self.test_loader, desc='testing'):
                 data = moveToGPUDevice(data, self.device, self.dtype)
 
-                spike_tensor = data['spike_tensor']
-                ang_vel_gt = data['angular_velocity']
+                spike_tensor = data['spike_tensor']     #torch.Size([24, 2, 180, 240, 100])
+                ang_vel_gt = data['angular_velocity']   #torch.Size([24, 3, 100])
 
-                ang_vel_pred = self.net(spike_tensor)
+                ang_vel_pred = self.net(spike_tensor)   #torch.Size([24, 3, 100])
+                print('Input shape:', spike_tensor.shape, 'Output shape:', ang_vel_pred.shape)
                 self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
         if self.write_output:
             self.data_collector.writeToDisk(self.output_dir)
