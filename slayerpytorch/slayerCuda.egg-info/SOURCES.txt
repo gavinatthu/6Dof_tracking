@@ -1,0 +1,7 @@
+README.md
+setup.py
+slayerCuda.egg-info/PKG-INFO
+slayerCuda.egg-info/SOURCES.txt
+slayerCuda.egg-info/dependency_links.txt
+slayerCuda.egg-info/top_level.txt
+src/cuda/slayerKernels.cu
