@@ -17,20 +17,22 @@ def setup_seed(seed):
     torch.backends.cudnn.deterministic = True
 
 
-# cfg_cnn = [(2, 128, 1),#AP2
-#         (128, 256, 1),
-#         (256, 256, 1),
-#        ]
-cfg_fc = [800,10]
+cfg_cnn = [(2, 128, 1),#AP2
+        (128, 256, 1),
+        (256, 256, 1),
+       ]
+cfg_fc = [256,128,3]
+
 
 thresh = 0.4
 lens = 0.5
-decay = 0.25
+decay = 0.5
 num_classes = 10
-batch_size  = 200
-num_epochs = 50
+batch_size  = 24
+num_epochs = 101
 learning_rate = 1e-3
-input_dim = 2312
+#input_dim = 8 * 8 * cfg_cnn[-1][1]
+input_dim = 691200
 time_window = 8
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -68,32 +70,32 @@ class SNN_Model(nn.Module):
     def __init__(self, num_classes=10):
         super(SNN_Model, self).__init__()
 
-        # self.conv1 = nn.Conv2d(2, cfg_cnn[0][1], kernel_size=3, stride=1, padding=1, )
-        #
-        # in_planes, out_planes, stride = cfg_cnn[1]
-        # self.conv2 = nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=1, padding=1, )
-        #
-        # in_planes, out_planes, stride = cfg_cnn[2]
-        # self.conv3 = nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=1, padding=1, )
+        self.conv1 = nn.Conv2d(2, cfg_cnn[0][1], kernel_size=3, stride=1, padding=1, )
+
+        in_planes, out_planes, stride = cfg_cnn[1]
+        self.conv2 = nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=1, padding=1, )
+
+        in_planes, out_planes, stride = cfg_cnn[2]
+        self.conv3 = nn.Conv2d(in_planes, out_planes, kernel_size=3, stride=1, padding=1, )
 
 
         self.fc1 = nn.Linear(input_dim , cfg_fc[0], )
         self.fc2 = nn.Linear(cfg_fc[0], cfg_fc[1], )
-        #self.fc3 = nn.Linear(cfg_fc[1], cfg_fc[2], )
+        self.fc3 = nn.Linear(cfg_fc[1], cfg_fc[2], )
 
         # self.fc3.weight.data = self.fc3.weight.data * 0.1
 
-        self.alpha1 = torch.nn.Parameter((1e-2 * torch.ones(1)).cuda(), requires_grad=True)
-        self.alpha2 = torch.nn.Parameter((1e-2 * torch.ones(1)).cuda(), requires_grad=True)
+        self.alpha1 = torch.nn.Parameter((1e-3 * torch.ones(1)).cuda(), requires_grad=True)
+        self.alpha2 = torch.nn.Parameter((1e-3 * torch.ones(1)).cuda(), requires_grad=True)
 
         self.eta1 = torch.nn.Parameter((1e-1 * torch.rand(1, cfg_fc[0])).cuda(), requires_grad=True)
         self.eta2 = torch.nn.Parameter((1e-1 * torch.rand(1, cfg_fc[1])).cuda(), requires_grad=True)
 
-        self.gamma1 = torch.nn.Parameter((1e-2 * torch.rand(cfg_fc[0], cfg_fc[0])).cuda(), requires_grad=True)
-        self.gamma2 = torch.nn.Parameter((1e-2 * torch.rand(cfg_fc[1], cfg_fc[1])).cuda(), requires_grad=True)
+        self.gamma1 = torch.nn.Parameter((1e-4 * torch.rand(cfg_fc[0], cfg_fc[0])).cuda(), requires_grad=True)
+        self.gamma2 = torch.nn.Parameter((1e-4 * torch.rand(cfg_fc[1], cfg_fc[1])).cuda(), requires_grad=True)
 
-        self.beta1 = torch.nn.Parameter((1e-2 * torch.rand(1, input_dim)).cuda(), requires_grad=True)
-        self.beta2 = torch.nn.Parameter((1e-2 * torch.rand(1, cfg_fc[0])).cuda(), requires_grad=True)
+        self.beta1 = torch.nn.Parameter((1e-3 * torch.rand(1, input_dim)).cuda(), requires_grad=True)
+        self.beta2 = torch.nn.Parameter((1e-3 * torch.rand(1, cfg_fc[0])).cuda(), requires_grad=True)
 
     def produce_hebb(self):
         hebb1 = torch.zeros(input_dim, cfg_fc[0], device=device)
@@ -102,10 +104,9 @@ class SNN_Model(nn.Module):
 
 
     def forward(self, input, hebb, win = time_window):
-
-        # c1_mem = c1_spike = c1_sumspike = torch.zeros(batch_size, cfg_cnn[0][1], 34, 34, device=device)
-        # c2_mem = c2_spike = c2_sumspike = torch.zeros(batch_size, cfg_cnn[1][1], 17, 17, device=device)
-        # c3_mem = c3_spike = c3_sumspike = torch.zeros(batch_size, cfg_cnn[2][1], 8, 8, device=device)
+        c1_mem = c1_spike = torch.zeros(batch_size, cfg_cnn[0][1], 180, 240, device=device)
+        c2_mem = c2_spike = torch.zeros(batch_size, cfg_cnn[1][1], 90, 120, device=device)
+        c3_mem = c3_spike = torch.zeros(batch_size, cfg_cnn[2][1], 90, 120, device=device)
 
         h1_mem = h1_spike = h1_sumspike = torch.zeros(batch_size, cfg_fc[0], device=device)
         h2_mem = h2_spike = h2_sumspike = torch.zeros(batch_size, cfg_fc[1], device=device)
@@ -113,26 +114,22 @@ class SNN_Model(nn.Module):
         hebb1, hebb2  = hebb
 
         for step in range(win):
-            k_filter = 1
+            # k_filter = math.exp(-step / 50)
 
             x = input[:, :, :, :, step]
 
-            # c1_mem, c1_spike = mem_update_no_plastic(self.conv1, F.dropout(x, p=0.25, training=self.training), c1_spike, c1_mem,
-            #                                )
-            #
-            #
-            # x = F.avg_pool2d(c1_spike, 2)
-            #
-            # c2_mem, c2_spike = mem_update_no_plastic(self.conv2, F.dropout(x * k_filter, p=probs, training=self.training), c2_spike, c2_mem,
-            #                                )
-            # x = F.avg_pool2d(c2_spike, 2)
-            #
-            #
-            # c3_mem, c3_spike = mem_update_no_plastic(self.conv3, F.dropout(x * k_filter, p=probs, training=self.training), c3_spike,
-            #                               c3_mem )
-            #
-            #
-            # x = F.avg_pool2d(c3_spike, 2)
+            c1_mem, c1_spike = mem_update_conv(self.conv1, F.dropout(x, p=0.25, training=self.training), c1_spike, c1_mem,
+                                          step)
+
+            x = F.avg_pool2d(c1_spike, 2)
+
+            c2_mem, c2_spike = mem_update_conv(self.conv2, F.dropout(x, p=probs, training=self.training), c2_spike, c2_mem,
+                                          step)
+
+            c3_mem, c3_spike = mem_update_conv(self.conv3, F.dropout(c2_spike, p=probs, training=self.training), c3_spike,
+                                          c3_mem, step)
+
+            x = F.avg_pool2d(c3_spike, 2)
             # print(x.size())
 
             x = x.view(batch_size, -1)
@@ -143,29 +140,23 @@ class SNN_Model(nn.Module):
             h2_mem, h2_spike, hebb2 = mem_update(self.fc2, self.alpha2, self.beta2, self.gamma2, self.eta2, h1_spike,
                                                  h2_spike, h2_mem, hebb2)
 
-            # h2_sumspike  = h2_sumspike + h2_spike
+            h2_sumspike  = h2_sumspike + h2_spike
 
-        outs = h2_mem / thresh
-        return outs, (hebb1.data, hebb2.data)
-
+        return self.fc3(h2_sumspike/time_window), (hebb1.data, hebb2.data)
 
 
 
-def mem_update(fc, alpha, beta, gamma,  eta, inputs, spike, mem, hebb):
-    state = fc(inputs) + alpha * inputs.mm(hebb)
-    mem = mem * (1 - spike) * decay + state
-    now_spike = act_fun(mem - thresh)
-    hebb = 0.99 * hebb - torch.bmm((inputs * beta.clamp(min=0.)).unsqueeze(2),
-                                   ((mem / thresh) - eta).unsqueeze(1)).mean(dim=0).squeeze()
-    hebb = hebb.clamp(min=-5, max=5)
-    return mem, now_spike.float(), hebb
 
-
-def mem_update_no_plastic(fc, inputs, spike, mem):
+def mem_update(fc, alpha, beta, gamma, eta, inputs,  spike, mem,hebb):
     state = fc(inputs)
-    mem = mem * (1 - spike) * decay + state
-    now_spike = act_fun(mem - thresh)
+    mem =  (1 - spike) * mem * decay  + state
+    now_spike = act_fun(mem - thresh).float()
+    return mem, now_spike, hebb
 
-    return mem, now_spike.float()
 
 
+def mem_update_conv(opts, inputs, spike, mem, t):
+    state = opts(inputs)
+    mem = (1 - spike) * mem * decay + state
+    now_spike = act_fun(mem - thresh).float()
+    return mem, now_spike

@@ -24,7 +24,6 @@ class TrainDatabase(DatasetBase):
         self.subsequences = list()
         for i in range(11):
             self.train_dir = os.path.join(data_dir, 'train', str(i))
-            print(self.train_dir)
             assert os.path.isdir(self.train_dir)
             
             for dirpath, dirnames, filenames in os.walk(self.train_dir):

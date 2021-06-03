@@ -8,7 +8,6 @@ from .gpu import moveToGPUDevice
 class TBase:
     def __init__(self, data_dir, log_config, general_config):
         self.data_dir = data_dir
-        print(self.data_dir)
         assert os.path.isdir(self.data_dir)
 
         self.log_config = log_config

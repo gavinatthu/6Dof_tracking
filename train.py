@@ -19,7 +19,7 @@ parser.add_argument('--logdir',
                     default=os.path.join(os.getcwd(), 'logs/train'),
                     help='Test logging directory')
 parser.add_argument('--config',
-                    default=os.path.join(os.getcwd(), 'test_config.yaml'),
+                    default=os.path.join(os.getcwd(), 'train_config.yaml'),
                     help='Path to test config file')
 parser.add_argument('--write',
                     action='store_false',
