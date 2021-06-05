@@ -3,7 +3,7 @@ import argparse
 import os
 # Must be set before importing torch.
 os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
-os.environ['CUDA_VISIBLE_DEVICES'] = '4'
+os.environ['CUDA_VISIBLE_DEVICES'] = '6'
 
 from config.utils import getTestConfigs
 #from utils import Tester
@@ -29,5 +29,6 @@ args = parser.parse_args()
 configs = getTestConfigs(args.logdir, args.config)
 
 trainer = Trainer(args.datadir, args.write, configs['log'], configs['general'])
-trainer.train(num_epochs=5, learning_rate=0.0001)
+
+trainer.train(num_epochs=25, learning_rate=0.0001)
 trainer.test()

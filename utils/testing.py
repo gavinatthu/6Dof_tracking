@@ -4,7 +4,7 @@ import torch
 from tqdm import tqdm
 
 from data_loader.testing import TestDatabase, TrainDatabase
-from model.loss import compute_loss
+from model.loss import compute_loss, compute_loss_snn
 from model.metric import medianRelativeError, rmse
 from model.cnn5_avgp_fc1 import SNN
 from .gpu import moveToGPUDevice
@@ -75,30 +75,29 @@ class Trainer(TBase):
         self._trainfromscratch()    # train from scratch
         #self._loadNetFromCheckpoint()      # train from pretrained model
         self.net = self.net.train()
-        
+
         act_fun = ActFun.apply
-        hebb_tuple = self.net.produce_hebb()
+        self.hebb_tuple = self.net.produce_hebb()
 
         optimizer = torch.optim.Adam(self.net.parameters(), lr=learning_rate)
         for epoch in range(num_epochs):
             for i , data in enumerate(self.train_loader):
-
                 self.net.zero_grad()
                 optimizer.zero_grad()
-                print(self.net)
                 data = moveToGPUDevice(data, self.device, self.dtype)
-
+                
                 spike_tensor = data['spike_tensor']     #torch.Size([24, 2, 180, 240, 100])
                 ang_vel_gt = data['angular_velocity']   #torch.Size([24, 3, 100])
 
-                ang_vel_pred, hebb_tuple = self.net(spike_tensor, hebb_tuple, 100)
-                ang_vel_pred = ang_vel_pred.repeat(1,1,100)
+                ang_vel_pred, self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, 30)   #torch.Size([24, 3])
 
-                #ang_vel_pred = self.net(spike_tensor)   #torch.Size([24, 3, 100])
-                loss = compute_loss(ang_vel_pred, ang_vel_gt, 50)
 
+                loss = compute_loss_snn(ang_vel_pred, ang_vel_gt)
+                
                 loss.backward()
                 optimizer.step()
+                ang_vel_pred = ang_vel_pred.unsqueeze(2)
+                ang_vel_pred = ang_vel_pred.repeat(1,1,100)    #torch.Size([24, 3, 100])
                 self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
                 if (i+1) % 100 == 0:
                     print('Epoch: [{}/{}], Step: [{}/{}], Loss: {}'
@@ -117,7 +116,10 @@ class Trainer(TBase):
                 spike_tensor = data['spike_tensor']
                 ang_vel_gt = data['angular_velocity']
 
-                ang_vel_pred = self.net(spike_tensor)
+                ang_vel_pred , self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, 30)
+                ang_vel_pred = ang_vel_pred.unsqueeze(2)
+                ang_vel_pred = ang_vel_pred.repeat(1,1,100)    #torch.Size([24, 3, 100])
+
                 self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
         if self.write_output:
             self.data_collector.writeToDisk(self.output_dir)
@@ -220,9 +222,8 @@ class DataCollector:
     def printErrors(self):
         pred = np.concatenate(self.data_pred, axis=0)
         gt = np.concatenate(self.data_gt, axis=0)
-
         pred = pred[..., self.loss_start_idx:]
         gt = gt[..., self.loss_start_idx:]
-
+        
         print('RMSE: {} deg/s'.format(rmse(pred, gt, deg=True)))
         print('median of relative error: {}'.format(medianRelativeError(pred, gt)))
