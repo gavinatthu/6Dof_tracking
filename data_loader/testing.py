@@ -23,7 +23,7 @@ class TrainDatabase(DatasetBase):
         assert os.path.isdir(data_dir)
         self.subsequences = list()
 
-        for i in range(1): #choose the file
+        for i in range(11): #choose the file
 
             self.train_dir = os.path.join(data_dir, 'train', str(i))
             assert os.path.isdir(self.train_dir)
