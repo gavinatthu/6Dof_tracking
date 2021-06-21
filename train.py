@@ -13,7 +13,7 @@ from utils.testing import Tester, Trainer
 parser = argparse.ArgumentParser(description='Train the SNN model')
 parser.add_argument('--datadir',
                     #default=os.path.join(os.getcwd(), 'data'),
-                    default=os.path.abspath('/data1/DVSAngular'),
+                    default=os.path.abspath('/data1/DVSAngular/'),
                     help='Data directory')
 parser.add_argument('--logdir',
                     default=os.path.join(os.getcwd(), 'logs/train'),

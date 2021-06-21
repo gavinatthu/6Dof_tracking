@@ -43,22 +43,14 @@ class DatasetBase(Dataset):
         subseq_file = self.subsequences[index]
 
         data = dict()
-        if Path(subseq_file).suffix == '.npz':
-            np_data = np.load(subseq_file)
-
-            data['ev_xy'] = torch.from_numpy(np_data['ev_xy'])
-            data['ev_pol'] = torch.from_numpy(np_data['ev_pol'])
-            data['ev_ts_us'] = torch.from_numpy(np_data['ev_ts'])
-            data['ang_xyz'] = torch.from_numpy(np_data['ang_xyz'])
-            data['ang_ts_us'] = torch.from_numpy(np_data['ang_ts'])
-        else:
-            assert Path(subseq_file).suffix == '.h5'
-            with h5py.File(subseq_file, "r") as hf:
-                data['ev_xy'] = torch.from_numpy(hf['ev_xy'][()])
-                data['ev_ts_us'] = torch.from_numpy(hf['ev_ts'][()])
-                data['ev_pol'] = torch.from_numpy(hf['ev_pol'][()])
-                data['ang_xyz'] = torch.from_numpy(hf['ang_xyz'][()])
-                data['ang_ts_us'] = torch.from_numpy(hf['ang_ts'][()])
+        print(subseq_file)
+        assert Path(subseq_file).suffix == '.h5'
+        with h5py.File(subseq_file, "r") as hf:
+            data['ev_xy'] = torch.from_numpy(hf['ev_xy'][()])
+            data['ev_ts_us'] = torch.from_numpy(hf['ev_ts'][()])
+            data['ev_pol'] = torch.from_numpy(hf['ev_pol'][()])
+            data['ang_xyz'] = torch.from_numpy(hf['ang_xyz'][()])
+            data['ang_ts_us'] = torch.from_numpy(hf['ang_ts'][()])
 
         if self.nTimeBins is None:
             self.nTimeBins = data['ang_ts_us'].numel()
@@ -74,7 +66,7 @@ class DatasetBase(Dataset):
                                                                 data['ev_ts_us'],
                                                                 data['ang_ts_us'])
         data['ang_xyz'] = data['ang_xyz'].t()
-        assert data['ang_xyz'].size(0) == 3
+        assert data['ang_xyz'].size(0) == 7
         out = {
             'file_number': int(''.join(filter(str.isdigit, Path(subseq_file).stem))),
             'spike_tensor': spike_tensor,
