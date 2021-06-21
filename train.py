@@ -3,7 +3,7 @@ import argparse
 import os
 # Must be set before importing torch.
 os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
-os.environ['CUDA_VISIBLE_DEVICES'] = '6'
+os.environ['CUDA_VISIBLE_DEVICES'] = '5'
 
 from config.utils import getTestConfigs
 #from utils import Tester

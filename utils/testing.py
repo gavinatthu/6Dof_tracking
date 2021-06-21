@@ -87,9 +87,9 @@ class Trainer(TBase):
                 data = moveToGPUDevice(data, self.device, self.dtype)
                 
                 spike_tensor = data['spike_tensor']     #torch.Size([24, 2, 180, 240, 100])
-                ang_vel_gt = data['angular_velocity']   #torch.Size([24, 3, 100])
+                ang_vel_gt = data['angular_velocity']   #torch.Size([24, 3])
 
-                ang_vel_pred, self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, 30)   #torch.Size([24, 3])
+                ang_vel_pred, self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, 40)   #torch.Size([24, 3])
 
 
                 loss = compute_loss_snn(ang_vel_pred, ang_vel_gt)
@@ -116,7 +116,7 @@ class Trainer(TBase):
                 spike_tensor = data['spike_tensor']
                 ang_vel_gt = data['angular_velocity']
 
-                ang_vel_pred , self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, 30)
+                ang_vel_pred , self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, 40)
                 ang_vel_pred = ang_vel_pred.unsqueeze(2)
                 ang_vel_pred = ang_vel_pred.repeat(1,1,100)    #torch.Size([24, 3, 100])
 
@@ -177,6 +177,7 @@ class Trainer_old(TBase):
         if self.write_output:
             self.data_collector.writeToDisk(self.output_dir)
         self.data_collector.printErrors()
+        torch.save(self.net, './pretrained/scnn.pt')
 
     def test(self):
         self.net = self.net.eval()
