@@ -6,7 +6,7 @@ import numpy as np
 
 PATH = "/data1/DVSAngular/shapes/"
 time_win = 30
-'''
+
 
 events_data = np.loadtxt(PATH + "events.txt") # (17962477, 4)(timestamp x y polarity)
 gt_data = np.loadtxt(PATH + "groundtruth.txt") #(11862, 8) (timestamp px py pz qx qy qz qw)
@@ -25,7 +25,7 @@ for i in range(int(len(gt_data)/time_win)):
     f.create_dataset('ang_ts', data=1000*(gt_data[i*time_win:(i+1)*time_win,0]-gt_data[i*time_win,0]))
     f.create_dataset('ang_xyz', data=gt_data[i*time_win:(i+1)*time_win,1:])
     f.close()
-'''
+
 
 
 f = h5py.File("/data1/DVSAngular/shapes/train/Seq_0.h5", "r")
