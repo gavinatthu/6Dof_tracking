@@ -43,7 +43,6 @@ class DatasetBase(Dataset):
         subseq_file = self.subsequences[index]
 
         data = dict()
-        print(subseq_file)
         assert Path(subseq_file).suffix == '.h5'
         with h5py.File(subseq_file, "r") as hf:
             data['ev_xy'] = torch.from_numpy(hf['ev_xy'][()])

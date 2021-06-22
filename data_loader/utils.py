@@ -26,6 +26,7 @@ class SpikeRepresentationGenerator:
         time_idx[time_idx == self.num_time_bins] = self.num_time_bins - 1
 
         spike_tensor = torch.zeros((2, self.height, self.width, self.num_time_bins))
-        print(spike_tensor.shape)
+        time_idx[time_idx >= 30] = 29.999
+        #print(spike_tensor.shape, time_idx.long())
         spike_tensor[ev_pol.long(), ev_xy[:, 1].long(), ev_xy[:, 0].long(), time_idx.long()] = 1
         return spike_tensor

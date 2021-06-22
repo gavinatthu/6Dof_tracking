@@ -7,7 +7,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '5'
 
 from config.utils import getTestConfigs
 #from utils import Tester
-from utils.testing import Tester, Trainer
+from utils.testing_6Dof import Tester, Trainer
 
 
 parser = argparse.ArgumentParser(description='Train the SNN model')

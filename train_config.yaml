@@ -7,7 +7,7 @@ model:
   type: 'SNN_cnn'
   CkptFile: 'pretrained/cnn5-avgp-fc1.pt'
   dtype:
-batchsize: 4
+batchsize: 2
 hardware:
   readerThreads: 8
   gpuDevice: 0
