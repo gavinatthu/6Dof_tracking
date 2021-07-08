@@ -6,16 +6,16 @@ from random import sample
 
 #TODO: 分离测试、训练集，转换成多个样本的形式 timewin=30切分
 
-PATH = "/data1/DVSAngular/shapes/"
-time_win = 30
+PATH = "/data1/DVSAngular/poster/"
+time_win = 10
 
-
+print("loading data...")
 events_data = np.loadtxt(PATH + "events.txt") # (17962477, 4)(timestamp x y polarity)
 gt_data = np.loadtxt(PATH + "groundtruth.txt") #(11862, 8) (timestamp px py pz qx qy qz qw)
 tmp = np.arange(len(events_data))
 start_time = 0
 
-for i in range(int(len(gt_data)/time_win)):
+for i in range(int(len(gt_data)/time_win)-1):
 
     index = tmp[(events_data[:,0]<gt_data[(i+1)*time_win,0])&(events_data[:,0]>=gt_data[i*time_win,0])]
     print('Seq_',i, 'Length ', len(index))
