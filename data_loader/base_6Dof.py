@@ -5,7 +5,7 @@ from pathlib import Path
 import torch
 from torch.utils.data.dataset import Dataset
 
-from .utils import SpikeRepresentationGenerator
+from .utils_6Dof import SpikeRepresentationGenerator
 
 
 class DatasetBase(Dataset):

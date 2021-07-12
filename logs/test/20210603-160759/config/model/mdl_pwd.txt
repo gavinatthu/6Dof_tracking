@@ -1,1 +1,0 @@
-/home/ljw/Projects/6Dof_tracking/model/cnn5_avgp_fc1.py

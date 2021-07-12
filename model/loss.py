@@ -21,6 +21,20 @@ def compute_loss(input_: torch.Tensor, target: torch.Tensor, time_start_idx: int
 
 def compute_loss_snn(input_: torch.Tensor, target: torch.Tensor):
     """
+    :param input: tensor of shape (batch, 3)
+    :param target: tensor of shape (batch, 3, time)
+    :return: loss
+    """
+    assert len(input_.shape) == 2
+    assert len(target.shape) == 3
+    print(input_.shape, target.shape)
+    assert input_.shape[1] == 3
+    target = torch.mean(target, dim = 2)
+    return torch.mean(torch.sqrt(torch.sum((input_ - target) ** 2, dim=1)))
+
+
+def compute_loss_snn_6Dof(input_: torch.Tensor, target: torch.Tensor):
+    """
     :param input: tensor of shape (batch, 7)
     :param target: tensor of shape (batch, 7, time)
     :return: loss

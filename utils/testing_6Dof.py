@@ -4,7 +4,7 @@ import torch
 from tqdm import tqdm
 
 from data_loader.testing_6Dof import TestDatabase, TrainDatabase
-from model.loss import compute_loss, compute_loss_snn
+from model.loss import compute_loss_snn_6Dof
 from model.metric import medianRelativeError, rmse
 from model.cnn5_avgp_fc1 import SNN
 from .gpu import moveToGPUDevice
@@ -49,6 +49,8 @@ class Tester(TBase):
 class Trainer(TBase):
     def __init__(self, data_dir, write, log_config, general_config):
         super().__init__(data_dir, log_config, general_config)
+
+        self.time_win = 10
         self.write_output = write
         self.output_dir = self.log_config.getOutDir()
         test_database = TestDatabase(self.data_dir)
@@ -89,25 +91,27 @@ class Trainer(TBase):
                 spike_tensor = data['spike_tensor']     #torch.Size([24, 2, 180, 240, 30])
                 ang_vel_gt = data['angular_velocity']   #torch.Size([24, 3])
 
-                ang_vel_pred, self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, 30)   #torch.Size([24, 3])
+                ang_vel_pred, self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, self.time_win)   #torch.Size([24, 3])
 
 
-                loss = compute_loss_snn(ang_vel_pred, ang_vel_gt)
+                loss = compute_loss_snn_6Dof(ang_vel_pred, ang_vel_gt)
                 
                 loss.backward()
                 optimizer.step()
                 ang_vel_pred = ang_vel_pred.unsqueeze(2)
-                ang_vel_pred = ang_vel_pred.repeat(1,1,30)    #torch.Size([24, 3, 30])
+                ang_vel_pred = ang_vel_pred.repeat(1,1,self.time_win)    #torch.Size([24, 3, 30])
                 self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
-                if (i+1) % 10 == 0:
+                if (i+1) % 50 == 0:
                     print('Epoch: [{}/{}], Step: [{}/{}], Loss: {}'
                         .format(epoch+1, num_epochs, i+1, len(self.train_loader), loss.item()))
+            self.test()
         if self.write_output:
             self.data_collector.writeToDisk(self.output_dir)
         self.data_collector.printErrors()
 
     def test(self):
         self.net = self.net.eval()
+        loss_list =[]
 
         with torch.no_grad():
             for i , data in enumerate(self.test_loader):
@@ -116,85 +120,18 @@ class Trainer(TBase):
                 spike_tensor = data['spike_tensor']
                 ang_vel_gt = data['angular_velocity']
 
-                ang_vel_pred , self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, 30)
+                ang_vel_pred , self.hebb_tuple = self.net(spike_tensor, self.hebb_tuple, self.time_win)
                 
-                loss = compute_loss_snn(ang_vel_pred, ang_vel_gt)
+                loss = compute_loss_snn_6Dof(ang_vel_pred, ang_vel_gt)
+                loss_list.append(loss)
 
                 ang_vel_pred = ang_vel_pred.unsqueeze(2)
-                ang_vel_pred = ang_vel_pred.repeat(1,1,30)    #torch.Size([24, 3, 100])
+                ang_vel_pred = ang_vel_pred.repeat(1,1,self.time_win)    #torch.Size([24, 3, 100])
                 
-                print('test loss:', loss)
+                #print('test loss:', loss)
                 self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
-        if self.write_output:
-            self.data_collector.writeToDisk(self.output_dir)
-        self.data_collector.printErrors()
-
-class Trainer_old(TBase):
-    def __init__(self, data_dir, write, log_config, general_config):
-        super().__init__(data_dir, log_config, general_config)
-        self.write_output = write
-        self.output_dir = self.log_config.getOutDir()
-        test_database = TestDatabase(self.data_dir)
-        train_database = TrainDatabase(self.data_dir)
-        
-        self.train_loader = torch.utils.data.DataLoader(
-                train_database,
-                batch_size=general_config['batchsize'],
-                shuffle=True,
-                num_workers=general_config['hardware']['readerThreads'],
-                pin_memory=True,
-                drop_last=False)
-
-        self.test_loader = torch.utils.data.DataLoader(
-                test_database,
-                batch_size=general_config['batchsize'],
-                shuffle=False,
-                num_workers=general_config['hardware']['readerThreads'],
-                pin_memory=True,
-                drop_last=False)
-        self.data_collector = DataCollector(general_config['simulation']['tStartLoss'])
-
-    def train(self, num_epochs, learning_rate):
-        self._trainfromscratch()    # train from scratch
-        #self._loadNetFromCheckpoint()      # train from pretrained model
-
-        self.net = self.net.train()
-        print(self.net)
-        optimizer = torch.optim.Adam(self.net.parameters(), lr=learning_rate)
-        for epoch in range(num_epochs):
-            for i , data in enumerate(self.train_loader):
-            #for data in tqdm(self.train_loader, desc='training'):
-                data = moveToGPUDevice(data, self.device, self.dtype)
-
-                spike_tensor = data['spike_tensor']     #torch.Size([24, 2, 180, 240, 100])
-                ang_vel_gt = data['angular_velocity']   #torch.Size([24, 3, 100])
-
-                ang_vel_pred = self.net(spike_tensor)   #torch.Size([24, 3, 100])
-                loss = compute_loss(ang_vel_pred, ang_vel_gt, 50)
-                optimizer.zero_grad()
-                loss.backward()
-                optimizer.step()
-                self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
-                if (i+1) % 100 == 0:
-                    print('Epoch: [{}/{}], Step: [{}/{}], Loss: {}'
-                        .format(epoch+1, num_epochs, i+1, len(self.train_loader), loss.item()))
-        if self.write_output:
-            self.data_collector.writeToDisk(self.output_dir)
-        self.data_collector.printErrors()
-        torch.save(self.net, './pretrained/scnn.pt')
-
-    def test(self):
-        self.net = self.net.eval()
-
-        with torch.no_grad():
-            for data in tqdm(self.test_loader, desc='testing'):
-                data = moveToGPUDevice(data, self.device, self.dtype)
-
-                spike_tensor = data['spike_tensor']
-                ang_vel_gt = data['angular_velocity']
-
-                ang_vel_pred = self.net(spike_tensor)
-                self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
+        loss_list = torch.tensor(loss_list)
+        print('text loss:', torch.mean(loss_list))
         if self.write_output:
             self.data_collector.writeToDisk(self.output_dir)
         self.data_collector.printErrors()
