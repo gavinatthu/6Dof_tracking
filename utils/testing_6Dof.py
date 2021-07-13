@@ -105,8 +105,8 @@ class Trainer(TBase):
                     print('Epoch: [{}/{}], Step: [{}/{}], Loss: {}'
                         .format(epoch+1, num_epochs, i+1, len(self.train_loader), loss.item()))
             self.test()
-        if self.write_output:
-            self.data_collector.writeToDisk(self.output_dir)
+        #if self.write_output:
+            #self.data_collector.writeToDisk(self.output_dir)
         self.data_collector.printErrors()
 
     def test(self):

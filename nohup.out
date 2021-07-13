@@ -1,31 +1,147 @@
-Epoch: [1/100], Step: [50/261], Loss: 2.349405288696289
-Epoch: [1/100], Step: [100/261], Loss: 2.2720847129821777
-Epoch: [1/100], Step: [150/261], Loss: 1.9408893585205078
-Epoch: [1/100], Step: [200/261], Loss: 1.5643467903137207
-Epoch: [1/100], Step: [250/261], Loss: 1.624880075454712
-text loss: tensor(1.4662)
+Epoch: [1/200], Step: [50/522], Loss: 2.401238441467285
+Epoch: [1/200], Step: [100/522], Loss: 2.411374807357788
+Epoch: [1/200], Step: [150/522], Loss: 2.0258522033691406
+Epoch: [1/200], Step: [200/522], Loss: 1.3182660341262817
+Epoch: [1/200], Step: [250/522], Loss: 1.1095601320266724
+Epoch: [1/200], Step: [300/522], Loss: 1.2569059133529663
+Epoch: [1/200], Step: [350/522], Loss: 1.1756088733673096
+Epoch: [1/200], Step: [400/522], Loss: 0.9779165983200073
+Epoch: [1/200], Step: [450/522], Loss: 1.0568771362304688
+Epoch: [1/200], Step: [500/522], Loss: 1.0303820371627808
+text loss: tensor(0.9942)
 RMSE: nan deg/s
 median of relative error: nan
 /home/ljw/anaconda3/lib/python3.8/site-packages/numpy/core/fromnumeric.py:3372: RuntimeWarning: Mean of empty slice.
   return _methods._mean(a, axis=axis, dtype=dtype,
 /home/ljw/anaconda3/lib/python3.8/site-packages/numpy/core/_methods.py:170: RuntimeWarning: invalid value encountered in true_divide
   ret = ret.dtype.type(ret / rcount)
-Epoch: [2/100], Step: [50/261], Loss: 1.4061119556427002
-Epoch: [2/100], Step: [100/261], Loss: 1.263758659362793
-Epoch: [2/100], Step: [150/261], Loss: 1.1107412576675415
-Epoch: [2/100], Step: [200/261], Loss: 1.1705431938171387
-Epoch: [2/100], Step: [250/261], Loss: 0.9989150166511536
-text loss: tensor(1.0323)
-Traceback (most recent call last):
-  File "train.py", line 33, in <module>
-    trainer.train(num_epochs=100, learning_rate=0.0001)  # LR 不能设置更大 否则无法收敛
-  File "/home/ljw/Projects/6Dof_tracking/utils/testing_6Dof.py", line 107, in train
-    self.test()
-  File "/home/ljw/Projects/6Dof_tracking/utils/testing_6Dof.py", line 136, in test
-    self.data_collector.writeToDisk(self.output_dir)
-  File "/home/ljw/Projects/6Dof_tracking/utils/testing_6Dof.py", line 160, in writeToDisk
-    np.save(os.path.join(out_dir, 'predictions.npy'), pred)
-  File "<__array_function__ internals>", line 5, in save
-  File "/home/ljw/anaconda3/lib/python3.8/site-packages/numpy/lib/npyio.py", line 524, in save
-    file_ctx = open(file, "wb")
-FileNotFoundError: [Errno 2] No such file or directory: '/home/ljw/Projects/6Dof_tracking/logs/train/20210712-161452/out/predictions.npy'
+Epoch: [2/200], Step: [50/522], Loss: 0.8471921682357788
+Epoch: [2/200], Step: [100/522], Loss: 1.2616255283355713
+Epoch: [2/200], Step: [150/522], Loss: 0.8418291211128235
+Epoch: [2/200], Step: [200/522], Loss: 1.0483468770980835
+Epoch: [2/200], Step: [250/522], Loss: 0.8959530591964722
+Epoch: [2/200], Step: [300/522], Loss: 1.3745988607406616
+Epoch: [2/200], Step: [350/522], Loss: 1.1101887226104736
+Epoch: [2/200], Step: [400/522], Loss: 0.7878005504608154
+Epoch: [2/200], Step: [450/522], Loss: 0.7483071088790894
+Epoch: [2/200], Step: [500/522], Loss: 1.0584943294525146
+text loss: tensor(1.0031)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [3/200], Step: [50/522], Loss: 0.9610122442245483
+Epoch: [3/200], Step: [100/522], Loss: 1.0406655073165894
+Epoch: [3/200], Step: [150/522], Loss: 1.001420259475708
+Epoch: [3/200], Step: [200/522], Loss: 1.1593189239501953
+Epoch: [3/200], Step: [250/522], Loss: 1.0182499885559082
+Epoch: [3/200], Step: [300/522], Loss: 1.2515747547149658
+Epoch: [3/200], Step: [350/522], Loss: 0.9842025637626648
+Epoch: [3/200], Step: [400/522], Loss: 0.89934903383255
+Epoch: [3/200], Step: [450/522], Loss: 1.2664973735809326
+Epoch: [3/200], Step: [500/522], Loss: 0.9819223880767822
+text loss: tensor(1.1074)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [4/200], Step: [50/522], Loss: 0.9801963567733765
+Epoch: [4/200], Step: [100/522], Loss: 1.1425724029541016
+Epoch: [4/200], Step: [150/522], Loss: 1.0768959522247314
+Epoch: [4/200], Step: [200/522], Loss: 0.9707826375961304
+Epoch: [4/200], Step: [250/522], Loss: 1.0385162830352783
+Epoch: [4/200], Step: [300/522], Loss: 1.136618971824646
+Epoch: [4/200], Step: [350/522], Loss: 0.988253116607666
+Epoch: [4/200], Step: [400/522], Loss: 1.2689646482467651
+Epoch: [4/200], Step: [450/522], Loss: 1.3576539754867554
+Epoch: [4/200], Step: [500/522], Loss: 1.505861520767212
+text loss: tensor(0.9861)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [5/200], Step: [50/522], Loss: 1.0400123596191406
+Epoch: [5/200], Step: [100/522], Loss: 1.1657865047454834
+Epoch: [5/200], Step: [150/522], Loss: 1.025910496711731
+Epoch: [5/200], Step: [200/522], Loss: 1.0149952173233032
+Epoch: [5/200], Step: [250/522], Loss: 0.9710913300514221
+Epoch: [5/200], Step: [300/522], Loss: 1.0209846496582031
+Epoch: [5/200], Step: [350/522], Loss: 1.0388928651809692
+Epoch: [5/200], Step: [400/522], Loss: 0.8013994693756104
+Epoch: [5/200], Step: [450/522], Loss: 0.913626492023468
+Epoch: [5/200], Step: [500/522], Loss: 0.9289619326591492
+text loss: tensor(1.0354)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [6/200], Step: [50/522], Loss: 1.0301125049591064
+Epoch: [6/200], Step: [100/522], Loss: 0.8692525625228882
+Epoch: [6/200], Step: [150/522], Loss: 0.6682125329971313
+Epoch: [6/200], Step: [200/522], Loss: 1.0831555128097534
+Epoch: [6/200], Step: [250/522], Loss: 0.9928094744682312
+Epoch: [6/200], Step: [300/522], Loss: 1.1062102317810059
+Epoch: [6/200], Step: [350/522], Loss: 1.009643793106079
+Epoch: [6/200], Step: [400/522], Loss: 1.0806077718734741
+Epoch: [6/200], Step: [450/522], Loss: 1.0218709707260132
+Epoch: [6/200], Step: [500/522], Loss: 0.857496976852417
+text loss: tensor(0.9603)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [7/200], Step: [50/522], Loss: 1.4349209070205688
+Epoch: [7/200], Step: [100/522], Loss: 0.9587315320968628
+Epoch: [7/200], Step: [150/522], Loss: 0.7618973255157471
+Epoch: [7/200], Step: [200/522], Loss: 0.7783297300338745
+Epoch: [7/200], Step: [250/522], Loss: 0.8127415180206299
+Epoch: [7/200], Step: [300/522], Loss: 0.9390591979026794
+Epoch: [7/200], Step: [350/522], Loss: 1.0103201866149902
+Epoch: [7/200], Step: [400/522], Loss: 1.1036165952682495
+Epoch: [7/200], Step: [450/522], Loss: 1.1645952463150024
+Epoch: [7/200], Step: [500/522], Loss: 0.9863103628158569
+text loss: tensor(0.8634)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [8/200], Step: [50/522], Loss: 1.0455316305160522
+Epoch: [8/200], Step: [100/522], Loss: 1.3977433443069458
+Epoch: [8/200], Step: [150/522], Loss: 0.683390736579895
+Epoch: [8/200], Step: [200/522], Loss: 0.6091508865356445
+Epoch: [8/200], Step: [250/522], Loss: 0.7290729880332947
+Epoch: [8/200], Step: [300/522], Loss: 1.126936674118042
+Epoch: [8/200], Step: [350/522], Loss: 1.0079834461212158
+Epoch: [8/200], Step: [400/522], Loss: 0.9433302879333496
+Epoch: [8/200], Step: [450/522], Loss: 0.7340297102928162
+Epoch: [8/200], Step: [500/522], Loss: 0.9716709852218628
+text loss: tensor(0.8537)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [9/200], Step: [50/522], Loss: 0.5019867420196533
+Epoch: [9/200], Step: [100/522], Loss: 0.7484103441238403
+Epoch: [9/200], Step: [150/522], Loss: 1.1353886127471924
+Epoch: [9/200], Step: [200/522], Loss: 0.9886682033538818
+Epoch: [9/200], Step: [250/522], Loss: 0.6861628293991089
+Epoch: [9/200], Step: [300/522], Loss: 0.8511538505554199
+Epoch: [9/200], Step: [350/522], Loss: 0.7301925420761108
+Epoch: [9/200], Step: [400/522], Loss: 0.41609513759613037
+Epoch: [9/200], Step: [450/522], Loss: 0.9532144069671631
+Epoch: [9/200], Step: [500/522], Loss: 1.6529650688171387
+text loss: tensor(0.8243)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [10/200], Step: [50/522], Loss: 0.5264899730682373
+Epoch: [10/200], Step: [100/522], Loss: 1.0517184734344482
+Epoch: [10/200], Step: [150/522], Loss: 0.5421954989433289
+Epoch: [10/200], Step: [200/522], Loss: 0.6304477453231812
+Epoch: [10/200], Step: [250/522], Loss: 0.6186656951904297
+Epoch: [10/200], Step: [300/522], Loss: 0.3289138972759247
+Epoch: [10/200], Step: [350/522], Loss: 0.6324673295021057
+Epoch: [10/200], Step: [400/522], Loss: 0.3322058320045471
+Epoch: [10/200], Step: [450/522], Loss: 0.42277246713638306
+Epoch: [10/200], Step: [500/522], Loss: 1.1382005214691162
+text loss: tensor(0.7543)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [11/200], Step: [50/522], Loss: 0.7565805315971375
+Epoch: [11/200], Step: [100/522], Loss: 0.7053156495094299
+Epoch: [11/200], Step: [150/522], Loss: 0.7783148288726807
+Epoch: [11/200], Step: [200/522], Loss: 0.5976022481918335
+Epoch: [11/200], Step: [250/522], Loss: 0.6906452775001526
+Epoch: [11/200], Step: [300/522], Loss: 0.7553091645240784
+Epoch: [11/200], Step: [350/522], Loss: 0.6622856855392456
+Epoch: [11/200], Step: [400/522], Loss: 0.8785004019737244
+Epoch: [11/200], Step: [450/522], Loss: 0.5565521717071533
+Epoch: [11/200], Step: [500/522], Loss: 0.3503270149230957
+text loss: tensor(0.7357)
+RMSE: nan deg/s
+median of relative error: nan
