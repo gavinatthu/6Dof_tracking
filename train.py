@@ -3,23 +3,23 @@ import argparse
 import os
 # Must be set before importing torch.
 os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
-os.environ['CUDA_VISIBLE_DEVICES'] = '4'
+os.environ['CUDA_VISIBLE_DEVICES'] = '6'
 
 from config.utils import getTestConfigs
 #from utils import Tester
-from utils.testing_6Dof import Tester, Trainer
+from utils.testing_6Dof import Trainer
 
 
 parser = argparse.ArgumentParser(description='Train the SNN model')
 parser.add_argument('--datadir',
                     #default=os.path.join(os.getcwd(), 'data'),
-                    default=os.path.abspath('/data1/DVSAngular/'),
+                    default=os.path.abspath('/data1/DVSAngular/poster'),
                     help='Data directory')
 parser.add_argument('--logdir',
                     default=os.path.join(os.getcwd(), 'logs/train'),
                     help='Test logging directory')
 parser.add_argument('--config',
-                    default=os.path.join(os.getcwd(), 'train_config.yaml'),
+                    default=os.path.join(os.getcwd(), 'train_config_6Dof.yaml'),
                     help='Path to test config file')
 parser.add_argument('--write',
                     action='store_false',

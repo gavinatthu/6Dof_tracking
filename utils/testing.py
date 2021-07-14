@@ -6,7 +6,6 @@ from tqdm import tqdm
 from data_loader.testing import TestDatabase, TrainDatabase
 from model.loss import compute_loss, compute_loss_snn
 from model.metric import medianRelativeError, rmse
-from model.cnn5_avgp_fc1 import SNN
 from .gpu import moveToGPUDevice
 from .tbase import TBase
 from model.SNN_cnn import *

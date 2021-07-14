@@ -1,12 +1,12 @@
-from . import cnn5_avgp_fc1, SNN_cnn
+from . import SNN_cnn, SNN_cnn_6Dof
 
 
 model_map = {
-    'cnn5-avgp-fc1': {
-        'net': cnn5_avgp_fc1.SNN,
-    },
     'SNN_cnn': {
         'net': SNN_cnn.SNN_Model,
+    },
+    'SNN_cnn_6Dof': {
+        'net': SNN_cnn_6Dof.SNN_Model,
     },
 }
 

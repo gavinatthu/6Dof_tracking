@@ -1,0 +1,13 @@
+# For short descriptions, look at 'config/config.py'.
+simulation:
+  Ts: 1
+  tSample: 100
+  tStartLoss: 50
+model:
+  type: 'SNN_cnn_6Dof'
+  CkptFile: 'pretrained/cnn5-avgp-fc1.pt'
+  dtype:
+batchsize: 2
+hardware:
+  readerThreads: 8
+  gpuDevice: 0

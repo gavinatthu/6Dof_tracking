@@ -1,25 +1,5 @@
 # Event-Based Angular Velocity Regression with Spiking Networks
 
-<p align="center">
-  <a href="https://youtu.be/cffwH41ReF4">
-    <img src="http://rpg.ifi.uzh.ch/img/papers/ICRA20_Gehrig_vid_thumbnail_play.png" alt="SNN Regression" width="600"/>
-  </a>
-</p>
-
-This is the code for the paper **Event-Based Angular Velocity Regression with Spiking Networks** by Mathias Gehrig, Sumit Bam Shrestha, Daniel Mouritzen and [Davide Scaramuzza](http://rpg.ifi.uzh.ch/people_scaramuzza.html).
-
-You can find a pdf of the paper [here](http://rpg.ifi.uzh.ch/docs/ICRA20_Gehrig.pdf).
-If you use any of this code, please cite the following publication:
-
-```bibtex
-@Article{Gehrig20icra,
-  author        = {Mathias Gehrig and Sumit Bam Shrestha and Daniel Mouritzen and Davide Scaramuzza},
-  title         = {Event-Based Angular Velocity Regression with Spiking Networks},
-  journal       = {{IEEE} International Conference on Robotics and Automation (ICRA)},
-  url           = {http://rpg.ifi.uzh.ch/docs/ICRA20_Gehrig.pdf},
-  year          = 2020
-}
-```
 
 ## Setup
 Tested with:
@@ -105,10 +85,10 @@ and the **original panorama images** to recreate the dataset from scratch
 wget "http://rpg.ifi.uzh.ch/data/snn_angular_velocity/dataset/imgs.tar" -O $data_dir/imgs.tar
 ```
 
-## Test
-To reproduce the numbers in the paper run:
+## Train 3Dof
+To train the 3Dof Angular velocity regression run:
 ```bash
-python test.py
+python train.py --datadir /data1/DVSAngular --config train_config.yaml
 ```
 #### Config file
 This uses by default the configuration file in `test_config.yaml`.

@@ -6,10 +6,9 @@ from tqdm import tqdm
 from data_loader.testing_6Dof import TestDatabase, TrainDatabase
 from model.loss import compute_loss_snn_6Dof
 from model.metric import medianRelativeError, rmse
-from model.cnn5_avgp_fc1 import SNN
 from .gpu import moveToGPUDevice
 from .tbase import TBase
-from model.SNN_cnn import *
+from model.SNN_cnn_6Dof import *
 
 class Tester(TBase):
     def __init__(self, data_dir, write, log_config, general_config):
@@ -100,14 +99,14 @@ class Trainer(TBase):
                 optimizer.step()
                 ang_vel_pred = ang_vel_pred.unsqueeze(2)
                 ang_vel_pred = ang_vel_pred.repeat(1,1,self.time_win)    #torch.Size([24, 3, 30])
-                self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
-                if (i+1) % 50 == 0:
+                #self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
+                if (i+1) % 100 == 0:
                     print('Epoch: [{}/{}], Step: [{}/{}], Loss: {}'
                         .format(epoch+1, num_epochs, i+1, len(self.train_loader), loss.item()))
             self.test()
         #if self.write_output:
             #self.data_collector.writeToDisk(self.output_dir)
-        self.data_collector.printErrors()
+        #self.data_collector.printErrors()
 
     def test(self):
         self.net = self.net.eval()
