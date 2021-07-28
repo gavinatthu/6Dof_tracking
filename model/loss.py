@@ -42,6 +42,6 @@ def compute_loss_snn_6Dof(input_: torch.Tensor, target: torch.Tensor):
     assert len(target.shape) == 3
     assert input_.shape[1] == 7
     target = torch.mean(target, dim = 2)
-    loss_p = torch.mean(torch.sqrt(torch.sum((input_[:,:4] - target[:,:4])**2, dim=1)/torch.norm(target[:,:4], dim=1)))
-    loss_o = torch.mean(torch.sqrt(torch.sum((input_[:,4:] - target[:,4:])**2, dim=1)/torch.norm(target[:,4:], dim=1)))
+    loss_p = torch.mean(torch.sqrt(torch.sum((input_[:,:4] - target[:,:4])**2, dim=1)))
+    loss_o = torch.mean(torch.sqrt(torch.sum((input_[:,4:] - target[:,4:])**2, dim=1)))
     return loss_p + loss_o

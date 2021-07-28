@@ -1,0 +1,1607 @@
+Epoch: [1/200], Step: [100/522], Loss: 1.8034768104553223
+Epoch: [1/200], Step: [200/522], Loss: 1.7289724349975586
+Epoch: [1/200], Step: [300/522], Loss: 1.3691514730453491
+Epoch: [1/200], Step: [400/522], Loss: 1.1738502979278564
+Epoch: [1/200], Step: [500/522], Loss: 0.872776985168457
+text loss: tensor(1.1653)
+RMSE: nan deg/s
+median of relative error: nan
+/home/ljw/anaconda3/lib/python3.8/site-packages/numpy/core/fromnumeric.py:3372: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/ljw/anaconda3/lib/python3.8/site-packages/numpy/core/_methods.py:170: RuntimeWarning: invalid value encountered in true_divide
+  ret = ret.dtype.type(ret / rcount)
+Epoch: [2/200], Step: [100/522], Loss: 1.3148484230041504
+Epoch: [2/200], Step: [200/522], Loss: 1.1717852354049683
+Epoch: [2/200], Step: [300/522], Loss: 1.1960806846618652
+Epoch: [2/200], Step: [400/522], Loss: 1.2262505292892456
+Epoch: [2/200], Step: [500/522], Loss: 1.3304591178894043
+text loss: tensor(1.1476)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [3/200], Step: [100/522], Loss: 0.7617695331573486
+Epoch: [3/200], Step: [200/522], Loss: 1.210814118385315
+Epoch: [3/200], Step: [300/522], Loss: 1.1338474750518799
+Epoch: [3/200], Step: [400/522], Loss: 1.0867630243301392
+Epoch: [3/200], Step: [500/522], Loss: 1.1005947589874268
+text loss: tensor(1.1393)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [4/200], Step: [100/522], Loss: 1.053817868232727
+Epoch: [4/200], Step: [200/522], Loss: 0.9300453066825867
+Epoch: [4/200], Step: [300/522], Loss: 1.0855426788330078
+Epoch: [4/200], Step: [400/522], Loss: 1.172627568244934
+Epoch: [4/200], Step: [500/522], Loss: 1.4928467273712158
+text loss: tensor(1.1394)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [5/200], Step: [100/522], Loss: 1.1312785148620605
+Epoch: [5/200], Step: [200/522], Loss: 1.1026887893676758
+Epoch: [5/200], Step: [300/522], Loss: 1.1358296871185303
+Epoch: [5/200], Step: [400/522], Loss: 1.02977454662323
+Epoch: [5/200], Step: [500/522], Loss: 3.097336769104004
+text loss: tensor(1.1627)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [6/200], Step: [100/522], Loss: 1.0605865716934204
+Epoch: [6/200], Step: [200/522], Loss: 1.0170166492462158
+Epoch: [6/200], Step: [300/522], Loss: 1.232503056526184
+Epoch: [6/200], Step: [400/522], Loss: 1.1537708044052124
+Epoch: [6/200], Step: [500/522], Loss: 1.2530527114868164
+text loss: tensor(1.1575)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [7/200], Step: [100/522], Loss: 1.2653000354766846
+Epoch: [7/200], Step: [200/522], Loss: 1.1372228860855103
+Epoch: [7/200], Step: [300/522], Loss: 1.5287137031555176
+Epoch: [7/200], Step: [400/522], Loss: 1.344609260559082
+Epoch: [7/200], Step: [500/522], Loss: 0.916090726852417
+text loss: tensor(1.1454)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [8/200], Step: [100/522], Loss: 0.4552417993545532
+Epoch: [8/200], Step: [200/522], Loss: 1.2359731197357178
+Epoch: [8/200], Step: [300/522], Loss: 1.782092809677124
+Epoch: [8/200], Step: [400/522], Loss: 1.0203440189361572
+Epoch: [8/200], Step: [500/522], Loss: 1.0663137435913086
+text loss: tensor(1.0201)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [9/200], Step: [100/522], Loss: 0.9238918423652649
+Epoch: [9/200], Step: [200/522], Loss: 0.8916218280792236
+Epoch: [9/200], Step: [300/522], Loss: 1.3465744256973267
+Epoch: [9/200], Step: [400/522], Loss: 0.863908052444458
+Epoch: [9/200], Step: [500/522], Loss: 0.9160299301147461
+text loss: tensor(1.0610)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [10/200], Step: [100/522], Loss: 0.723703920841217
+Epoch: [10/200], Step: [200/522], Loss: 0.615986704826355
+Epoch: [10/200], Step: [300/522], Loss: 1.4920636415481567
+Epoch: [10/200], Step: [400/522], Loss: 0.7106673717498779
+Epoch: [10/200], Step: [500/522], Loss: 1.8064355850219727
+text loss: tensor(0.8747)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [11/200], Step: [100/522], Loss: 0.6200408935546875
+Epoch: [11/200], Step: [200/522], Loss: 1.16398024559021
+Epoch: [11/200], Step: [300/522], Loss: 0.672569751739502
+Epoch: [11/200], Step: [400/522], Loss: 0.8086403608322144
+Epoch: [11/200], Step: [500/522], Loss: 0.583609938621521
+text loss: tensor(0.8871)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [12/200], Step: [100/522], Loss: 0.9855350255966187
+Epoch: [12/200], Step: [200/522], Loss: 1.0304677486419678
+Epoch: [12/200], Step: [300/522], Loss: 1.2341365814208984
+Epoch: [12/200], Step: [400/522], Loss: 0.754292368888855
+Epoch: [12/200], Step: [500/522], Loss: 0.4798366129398346
+text loss: tensor(0.8763)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [13/200], Step: [100/522], Loss: 0.9033241271972656
+Epoch: [13/200], Step: [200/522], Loss: 1.2411288022994995
+Epoch: [13/200], Step: [300/522], Loss: 0.7597764134407043
+Epoch: [13/200], Step: [400/522], Loss: 0.5744444727897644
+Epoch: [13/200], Step: [500/522], Loss: 0.3579373359680176
+text loss: tensor(0.8290)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [14/200], Step: [100/522], Loss: 0.942608118057251
+Epoch: [14/200], Step: [200/522], Loss: 0.24719445407390594
+Epoch: [14/200], Step: [300/522], Loss: 0.35682985186576843
+Epoch: [14/200], Step: [400/522], Loss: 0.5146337747573853
+Epoch: [14/200], Step: [500/522], Loss: 0.7847694158554077
+text loss: tensor(0.7709)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [15/200], Step: [100/522], Loss: 0.3161538243293762
+Epoch: [15/200], Step: [200/522], Loss: 1.1068718433380127
+Epoch: [15/200], Step: [300/522], Loss: 0.5762275457382202
+Epoch: [15/200], Step: [400/522], Loss: 1.163862705230713
+Epoch: [15/200], Step: [500/522], Loss: 0.40874093770980835
+text loss: tensor(0.7705)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [16/200], Step: [100/522], Loss: 1.051151156425476
+Epoch: [16/200], Step: [200/522], Loss: 0.4112548828125
+Epoch: [16/200], Step: [300/522], Loss: 1.1024407148361206
+Epoch: [16/200], Step: [400/522], Loss: 0.5842018127441406
+Epoch: [16/200], Step: [500/522], Loss: 1.2597466707229614
+text loss: tensor(0.7158)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [17/200], Step: [100/522], Loss: 0.5090320110321045
+Epoch: [17/200], Step: [200/522], Loss: 0.296448290348053
+Epoch: [17/200], Step: [300/522], Loss: 0.5421445369720459
+Epoch: [17/200], Step: [400/522], Loss: 0.4343072175979614
+Epoch: [17/200], Step: [500/522], Loss: 0.7303735613822937
+text loss: tensor(0.6827)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [18/200], Step: [100/522], Loss: 0.5847304463386536
+Epoch: [18/200], Step: [200/522], Loss: 0.5247993469238281
+Epoch: [18/200], Step: [300/522], Loss: 0.4515824317932129
+Epoch: [18/200], Step: [400/522], Loss: 0.23658019304275513
+Epoch: [18/200], Step: [500/522], Loss: 0.21960008144378662
+text loss: tensor(0.6682)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [19/200], Step: [100/522], Loss: 0.25911420583724976
+Epoch: [19/200], Step: [200/522], Loss: 0.5979830026626587
+Epoch: [19/200], Step: [300/522], Loss: 0.8917340040206909
+Epoch: [19/200], Step: [400/522], Loss: 0.3492642045021057
+Epoch: [19/200], Step: [500/522], Loss: 0.41998445987701416
+text loss: tensor(0.6529)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [20/200], Step: [100/522], Loss: 0.8097655177116394
+Epoch: [20/200], Step: [200/522], Loss: 0.321747362613678
+Epoch: [20/200], Step: [300/522], Loss: 0.2651495635509491
+Epoch: [20/200], Step: [400/522], Loss: 0.2673560678958893
+Epoch: [20/200], Step: [500/522], Loss: 0.5835555791854858
+text loss: tensor(0.6588)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [21/200], Step: [100/522], Loss: 0.13587594032287598
+Epoch: [21/200], Step: [200/522], Loss: 0.3529326319694519
+Epoch: [21/200], Step: [300/522], Loss: 0.21078135073184967
+Epoch: [21/200], Step: [400/522], Loss: 0.42667117714881897
+Epoch: [21/200], Step: [500/522], Loss: 0.7566789388656616
+text loss: tensor(0.6516)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [22/200], Step: [100/522], Loss: 0.34425199031829834
+Epoch: [22/200], Step: [200/522], Loss: 1.1340579986572266
+Epoch: [22/200], Step: [300/522], Loss: 0.805512547492981
+Epoch: [22/200], Step: [400/522], Loss: 0.4899185299873352
+Epoch: [22/200], Step: [500/522], Loss: 0.3113478422164917
+text loss: tensor(0.6384)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [23/200], Step: [100/522], Loss: 0.29818087816238403
+Epoch: [23/200], Step: [200/522], Loss: 0.30391472578048706
+Epoch: [23/200], Step: [300/522], Loss: 0.3403800129890442
+Epoch: [23/200], Step: [400/522], Loss: 0.10851682722568512
+Epoch: [23/200], Step: [500/522], Loss: 1.3098942041397095
+text loss: tensor(0.6483)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [24/200], Step: [100/522], Loss: 0.22228339314460754
+Epoch: [24/200], Step: [200/522], Loss: 0.24425682425498962
+Epoch: [24/200], Step: [300/522], Loss: 0.384314626455307
+Epoch: [24/200], Step: [400/522], Loss: 0.5236685276031494
+Epoch: [24/200], Step: [500/522], Loss: 0.4509197473526001
+text loss: tensor(0.6737)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [25/200], Step: [100/522], Loss: 0.12626558542251587
+Epoch: [25/200], Step: [200/522], Loss: 0.3949633538722992
+Epoch: [25/200], Step: [300/522], Loss: 1.006894826889038
+Epoch: [25/200], Step: [400/522], Loss: 0.3406491279602051
+Epoch: [25/200], Step: [500/522], Loss: 0.3084051012992859
+text loss: tensor(0.6156)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [26/200], Step: [100/522], Loss: 0.6672333478927612
+Epoch: [26/200], Step: [200/522], Loss: 0.13683390617370605
+Epoch: [26/200], Step: [300/522], Loss: 0.21598482131958008
+Epoch: [26/200], Step: [400/522], Loss: 0.36367201805114746
+Epoch: [26/200], Step: [500/522], Loss: 0.39101076126098633
+text loss: tensor(0.6346)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [27/200], Step: [100/522], Loss: 0.20060452818870544
+Epoch: [27/200], Step: [200/522], Loss: 0.17280498147010803
+Epoch: [27/200], Step: [300/522], Loss: 0.9083868861198425
+Epoch: [27/200], Step: [400/522], Loss: 0.18064086139202118
+Epoch: [27/200], Step: [500/522], Loss: 0.2623777687549591
+text loss: tensor(0.5516)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [28/200], Step: [100/522], Loss: 0.6617442965507507
+Epoch: [28/200], Step: [200/522], Loss: 0.3357197642326355
+Epoch: [28/200], Step: [300/522], Loss: 0.3189937174320221
+Epoch: [28/200], Step: [400/522], Loss: 0.17363078892230988
+Epoch: [28/200], Step: [500/522], Loss: 0.16357974708080292
+text loss: tensor(0.7187)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [29/200], Step: [100/522], Loss: 0.5229856371879578
+Epoch: [29/200], Step: [200/522], Loss: 0.1814548671245575
+Epoch: [29/200], Step: [300/522], Loss: 0.15001210570335388
+Epoch: [29/200], Step: [400/522], Loss: 0.27309244871139526
+Epoch: [29/200], Step: [500/522], Loss: 0.13435524702072144
+text loss: tensor(0.5964)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [30/200], Step: [100/522], Loss: 0.15055498480796814
+Epoch: [30/200], Step: [200/522], Loss: 0.14231175184249878
+Epoch: [30/200], Step: [300/522], Loss: 0.29790252447128296
+Epoch: [30/200], Step: [400/522], Loss: 0.21876418590545654
+Epoch: [30/200], Step: [500/522], Loss: 0.8010132312774658
+text loss: tensor(0.6092)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [31/200], Step: [100/522], Loss: 0.17934677004814148
+Epoch: [31/200], Step: [200/522], Loss: 0.3567817807197571
+Epoch: [31/200], Step: [300/522], Loss: 0.14734654128551483
+Epoch: [31/200], Step: [400/522], Loss: 0.1356237828731537
+Epoch: [31/200], Step: [500/522], Loss: 0.18691590428352356
+text loss: tensor(0.5770)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [32/200], Step: [100/522], Loss: 0.17271974682807922
+Epoch: [32/200], Step: [200/522], Loss: 0.2951704263687134
+Epoch: [32/200], Step: [300/522], Loss: 0.2553078532218933
+Epoch: [32/200], Step: [400/522], Loss: 0.16056405007839203
+Epoch: [32/200], Step: [500/522], Loss: 0.20145151019096375
+text loss: tensor(0.5718)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [33/200], Step: [100/522], Loss: 0.28305941820144653
+Epoch: [33/200], Step: [200/522], Loss: 0.23808123171329498
+Epoch: [33/200], Step: [300/522], Loss: 0.19371750950813293
+Epoch: [33/200], Step: [400/522], Loss: 0.13156861066818237
+Epoch: [33/200], Step: [500/522], Loss: 0.13438598811626434
+text loss: tensor(0.5703)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [34/200], Step: [100/522], Loss: 0.15680542588233948
+Epoch: [34/200], Step: [200/522], Loss: 0.14144910871982574
+Epoch: [34/200], Step: [300/522], Loss: 0.12995129823684692
+Epoch: [34/200], Step: [400/522], Loss: 0.11301414668560028
+Epoch: [34/200], Step: [500/522], Loss: 0.19811198115348816
+text loss: tensor(0.5800)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [35/200], Step: [100/522], Loss: 0.27603405714035034
+Epoch: [35/200], Step: [200/522], Loss: 0.1098925992846489
+Epoch: [35/200], Step: [300/522], Loss: 0.21338315308094025
+Epoch: [35/200], Step: [400/522], Loss: 0.28983595967292786
+Epoch: [35/200], Step: [500/522], Loss: 0.14320430159568787
+text loss: tensor(0.5622)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [36/200], Step: [100/522], Loss: 0.14526668190956116
+Epoch: [36/200], Step: [200/522], Loss: 0.10409638285636902
+Epoch: [36/200], Step: [300/522], Loss: 0.10311833769083023
+Epoch: [36/200], Step: [400/522], Loss: 0.10966092348098755
+Epoch: [36/200], Step: [500/522], Loss: 0.22078010439872742
+text loss: tensor(0.6174)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [37/200], Step: [100/522], Loss: 0.14187464118003845
+Epoch: [37/200], Step: [200/522], Loss: 0.2240239977836609
+Epoch: [37/200], Step: [300/522], Loss: 0.13883483409881592
+Epoch: [37/200], Step: [400/522], Loss: 0.0774337500333786
+Epoch: [37/200], Step: [500/522], Loss: 0.2923319339752197
+text loss: tensor(0.6170)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [38/200], Step: [100/522], Loss: 0.10090851783752441
+Epoch: [38/200], Step: [200/522], Loss: 0.23187972605228424
+Epoch: [38/200], Step: [300/522], Loss: 0.1688140630722046
+Epoch: [38/200], Step: [400/522], Loss: 0.10859639942646027
+Epoch: [38/200], Step: [500/522], Loss: 0.12709744274616241
+text loss: tensor(0.5616)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [39/200], Step: [100/522], Loss: 0.6229909658432007
+Epoch: [39/200], Step: [200/522], Loss: 0.07716262340545654
+Epoch: [39/200], Step: [300/522], Loss: 0.19185802340507507
+Epoch: [39/200], Step: [400/522], Loss: 0.10349089652299881
+Epoch: [39/200], Step: [500/522], Loss: 0.1140480637550354
+text loss: tensor(0.5841)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [40/200], Step: [100/522], Loss: 0.1829066127538681
+Epoch: [40/200], Step: [200/522], Loss: 0.1870909035205841
+Epoch: [40/200], Step: [300/522], Loss: 0.1113678365945816
+Epoch: [40/200], Step: [400/522], Loss: 0.6133872866630554
+Epoch: [40/200], Step: [500/522], Loss: 0.14958584308624268
+text loss: tensor(0.5838)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [41/200], Step: [100/522], Loss: 0.16476882994174957
+Epoch: [41/200], Step: [200/522], Loss: 0.13479973375797272
+Epoch: [41/200], Step: [300/522], Loss: 0.21176958084106445
+Epoch: [41/200], Step: [400/522], Loss: 0.10416696965694427
+Epoch: [41/200], Step: [500/522], Loss: 0.20926836133003235
+text loss: tensor(0.5401)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [42/200], Step: [100/522], Loss: 0.14555203914642334
+Epoch: [42/200], Step: [200/522], Loss: 0.14924147725105286
+Epoch: [42/200], Step: [300/522], Loss: 0.12704366445541382
+Epoch: [42/200], Step: [400/522], Loss: 0.1398099809885025
+Epoch: [42/200], Step: [500/522], Loss: 0.14770366251468658
+text loss: tensor(0.5416)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [43/200], Step: [100/522], Loss: 0.13483989238739014
+Epoch: [43/200], Step: [200/522], Loss: 0.19671398401260376
+Epoch: [43/200], Step: [300/522], Loss: 0.16110751032829285
+Epoch: [43/200], Step: [400/522], Loss: 0.10259547829627991
+Epoch: [43/200], Step: [500/522], Loss: 0.1898762285709381
+text loss: tensor(0.5558)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [44/200], Step: [100/522], Loss: 0.11043347418308258
+Epoch: [44/200], Step: [200/522], Loss: 0.08296439796686172
+Epoch: [44/200], Step: [300/522], Loss: 0.13180121779441833
+Epoch: [44/200], Step: [400/522], Loss: 0.07669878005981445
+Epoch: [44/200], Step: [500/522], Loss: 0.1813265085220337
+text loss: tensor(0.5357)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [45/200], Step: [100/522], Loss: 0.09274347126483917
+Epoch: [45/200], Step: [200/522], Loss: 0.14450624585151672
+Epoch: [45/200], Step: [300/522], Loss: 0.2059977501630783
+Epoch: [45/200], Step: [400/522], Loss: 0.20064067840576172
+Epoch: [45/200], Step: [500/522], Loss: 0.09106266498565674
+text loss: tensor(0.5525)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [46/200], Step: [100/522], Loss: 0.2613057494163513
+Epoch: [46/200], Step: [200/522], Loss: 0.3717634081840515
+Epoch: [46/200], Step: [300/522], Loss: 0.14361882209777832
+Epoch: [46/200], Step: [400/522], Loss: 0.1082916259765625
+Epoch: [46/200], Step: [500/522], Loss: 0.1328483521938324
+text loss: tensor(0.5703)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [47/200], Step: [100/522], Loss: 0.1534797102212906
+Epoch: [47/200], Step: [200/522], Loss: 0.2547829747200012
+Epoch: [47/200], Step: [300/522], Loss: 0.060834407806396484
+Epoch: [47/200], Step: [400/522], Loss: 0.10486830025911331
+Epoch: [47/200], Step: [500/522], Loss: 0.09303741902112961
+text loss: tensor(0.5440)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [48/200], Step: [100/522], Loss: 0.17323002219200134
+Epoch: [48/200], Step: [200/522], Loss: 0.10892469435930252
+Epoch: [48/200], Step: [300/522], Loss: 0.10439039766788483
+Epoch: [48/200], Step: [400/522], Loss: 0.2757519781589508
+Epoch: [48/200], Step: [500/522], Loss: 0.11575168371200562
+text loss: tensor(0.6024)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [49/200], Step: [100/522], Loss: 0.09315963834524155
+Epoch: [49/200], Step: [200/522], Loss: 0.45184326171875
+Epoch: [49/200], Step: [300/522], Loss: 0.11884275078773499
+Epoch: [49/200], Step: [400/522], Loss: 0.1693146824836731
+Epoch: [49/200], Step: [500/522], Loss: 0.07676515728235245
+text loss: tensor(0.5749)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [50/200], Step: [100/522], Loss: 0.1086779534816742
+Epoch: [50/200], Step: [200/522], Loss: 0.09658227860927582
+Epoch: [50/200], Step: [300/522], Loss: 0.13203129172325134
+Epoch: [50/200], Step: [400/522], Loss: 0.13994872570037842
+Epoch: [50/200], Step: [500/522], Loss: 0.11833234876394272
+text loss: tensor(0.5425)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [51/200], Step: [100/522], Loss: 0.0880698710680008
+Epoch: [51/200], Step: [200/522], Loss: 0.06800925731658936
+Epoch: [51/200], Step: [300/522], Loss: 0.09701565653085709
+Epoch: [51/200], Step: [400/522], Loss: 0.07251347601413727
+Epoch: [51/200], Step: [500/522], Loss: 0.09640084952116013
+text loss: tensor(0.5360)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [52/200], Step: [100/522], Loss: 0.0984610989689827
+Epoch: [52/200], Step: [200/522], Loss: 0.09154883027076721
+Epoch: [52/200], Step: [300/522], Loss: 0.3328741788864136
+Epoch: [52/200], Step: [400/522], Loss: 0.15997129678726196
+Epoch: [52/200], Step: [500/522], Loss: 0.07823526114225388
+text loss: tensor(0.5771)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [53/200], Step: [100/522], Loss: 0.12934863567352295
+Epoch: [53/200], Step: [200/522], Loss: 0.11591431498527527
+Epoch: [53/200], Step: [300/522], Loss: 0.0688825398683548
+Epoch: [53/200], Step: [400/522], Loss: 0.14019429683685303
+Epoch: [53/200], Step: [500/522], Loss: 0.3115878403186798
+text loss: tensor(0.5439)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [54/200], Step: [100/522], Loss: 0.10870476812124252
+Epoch: [54/200], Step: [200/522], Loss: 0.10762953758239746
+Epoch: [54/200], Step: [300/522], Loss: 0.2307434231042862
+Epoch: [54/200], Step: [400/522], Loss: 0.10560841113328934
+Epoch: [54/200], Step: [500/522], Loss: 0.10705467313528061
+text loss: tensor(0.5852)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [55/200], Step: [100/522], Loss: 0.5814334750175476
+Epoch: [55/200], Step: [200/522], Loss: 0.17785553634166718
+Epoch: [55/200], Step: [300/522], Loss: 0.14495547115802765
+Epoch: [55/200], Step: [400/522], Loss: 0.10056827962398529
+Epoch: [55/200], Step: [500/522], Loss: 0.09513294696807861
+text loss: tensor(0.5571)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [56/200], Step: [100/522], Loss: 0.3606995940208435
+Epoch: [56/200], Step: [200/522], Loss: 0.07234814763069153
+Epoch: [56/200], Step: [300/522], Loss: 0.1269228756427765
+Epoch: [56/200], Step: [400/522], Loss: 0.09482739120721817
+Epoch: [56/200], Step: [500/522], Loss: 0.12325342744588852
+text loss: tensor(0.5387)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [57/200], Step: [100/522], Loss: 0.1003616601228714
+Epoch: [57/200], Step: [200/522], Loss: 0.0872792899608612
+Epoch: [57/200], Step: [300/522], Loss: 0.11136721074581146
+Epoch: [57/200], Step: [400/522], Loss: 0.40550339221954346
+Epoch: [57/200], Step: [500/522], Loss: 0.11787286400794983
+text loss: tensor(0.5548)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [58/200], Step: [100/522], Loss: 0.07632219046354294
+Epoch: [58/200], Step: [200/522], Loss: 0.1132778525352478
+Epoch: [58/200], Step: [300/522], Loss: 0.13132122159004211
+Epoch: [58/200], Step: [400/522], Loss: 0.16593000292778015
+Epoch: [58/200], Step: [500/522], Loss: 0.14495360851287842
+text loss: tensor(0.5810)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [59/200], Step: [100/522], Loss: 0.14567404985427856
+Epoch: [59/200], Step: [200/522], Loss: 0.29125359654426575
+Epoch: [59/200], Step: [300/522], Loss: 0.0981985330581665
+Epoch: [59/200], Step: [400/522], Loss: 0.0857584998011589
+Epoch: [59/200], Step: [500/522], Loss: 0.09252358973026276
+text loss: tensor(0.5447)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [60/200], Step: [100/522], Loss: 0.06783566623926163
+Epoch: [60/200], Step: [200/522], Loss: 0.114792600274086
+Epoch: [60/200], Step: [300/522], Loss: 0.07905490696430206
+Epoch: [60/200], Step: [400/522], Loss: 0.11079561710357666
+Epoch: [60/200], Step: [500/522], Loss: 0.05913562327623367
+text loss: tensor(0.5631)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [61/200], Step: [100/522], Loss: 0.086189404129982
+Epoch: [61/200], Step: [200/522], Loss: 0.1358136236667633
+Epoch: [61/200], Step: [300/522], Loss: 0.08602261543273926
+Epoch: [61/200], Step: [400/522], Loss: 0.1299760937690735
+Epoch: [61/200], Step: [500/522], Loss: 0.07863254845142365
+text loss: tensor(0.5467)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [62/200], Step: [100/522], Loss: 0.09507230669260025
+Epoch: [62/200], Step: [200/522], Loss: 0.06899955868721008
+Epoch: [62/200], Step: [300/522], Loss: 0.11153136193752289
+Epoch: [62/200], Step: [400/522], Loss: 0.1200321763753891
+Epoch: [62/200], Step: [500/522], Loss: 0.13695046305656433
+text loss: tensor(0.5332)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [63/200], Step: [100/522], Loss: 0.06044180318713188
+Epoch: [63/200], Step: [200/522], Loss: 0.12909039855003357
+Epoch: [63/200], Step: [300/522], Loss: 0.6485875248908997
+Epoch: [63/200], Step: [400/522], Loss: 0.11459146440029144
+Epoch: [63/200], Step: [500/522], Loss: 0.10390520095825195
+text loss: tensor(0.5312)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [64/200], Step: [100/522], Loss: 0.23494616150856018
+Epoch: [64/200], Step: [200/522], Loss: 0.0768541544675827
+Epoch: [64/200], Step: [300/522], Loss: 1.2487198114395142
+Epoch: [64/200], Step: [400/522], Loss: 0.05428346246480942
+Epoch: [64/200], Step: [500/522], Loss: 0.6089863181114197
+text loss: tensor(0.5523)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [65/200], Step: [100/522], Loss: 0.0897957906126976
+Epoch: [65/200], Step: [200/522], Loss: 0.15103542804718018
+Epoch: [65/200], Step: [300/522], Loss: 0.09157511591911316
+Epoch: [65/200], Step: [400/522], Loss: 0.09073954820632935
+Epoch: [65/200], Step: [500/522], Loss: 0.2717823386192322
+text loss: tensor(0.5519)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [66/200], Step: [100/522], Loss: 0.3893451392650604
+Epoch: [66/200], Step: [200/522], Loss: 0.0584833100438118
+Epoch: [66/200], Step: [300/522], Loss: 0.11672063171863556
+Epoch: [66/200], Step: [400/522], Loss: 0.04717422276735306
+Epoch: [66/200], Step: [500/522], Loss: 0.06039293855428696
+text loss: tensor(0.5197)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [67/200], Step: [100/522], Loss: 0.10774578899145126
+Epoch: [67/200], Step: [200/522], Loss: 0.10034820437431335
+Epoch: [67/200], Step: [300/522], Loss: 0.07095961272716522
+Epoch: [67/200], Step: [400/522], Loss: 0.09233610332012177
+Epoch: [67/200], Step: [500/522], Loss: 0.18893054127693176
+text loss: tensor(0.5374)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [68/200], Step: [100/522], Loss: 0.0728912279009819
+Epoch: [68/200], Step: [200/522], Loss: 0.10012714564800262
+Epoch: [68/200], Step: [300/522], Loss: 0.2768845558166504
+Epoch: [68/200], Step: [400/522], Loss: 0.13064655661582947
+Epoch: [68/200], Step: [500/522], Loss: 0.06624995172023773
+text loss: tensor(0.5733)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [69/200], Step: [100/522], Loss: 0.07395823299884796
+Epoch: [69/200], Step: [200/522], Loss: 0.0745638757944107
+Epoch: [69/200], Step: [300/522], Loss: 0.056423623114824295
+Epoch: [69/200], Step: [400/522], Loss: 0.10131211578845978
+Epoch: [69/200], Step: [500/522], Loss: 0.10288591682910919
+text loss: tensor(0.5256)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [70/200], Step: [100/522], Loss: 0.12615282833576202
+Epoch: [70/200], Step: [200/522], Loss: 0.06708849966526031
+Epoch: [70/200], Step: [300/522], Loss: 0.10422410815954208
+Epoch: [70/200], Step: [400/522], Loss: 0.16741234064102173
+Epoch: [70/200], Step: [500/522], Loss: 0.10659913718700409
+text loss: tensor(0.5337)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [71/200], Step: [100/522], Loss: 0.09063594043254852
+Epoch: [71/200], Step: [200/522], Loss: 0.23217827081680298
+Epoch: [71/200], Step: [300/522], Loss: 0.13398131728172302
+Epoch: [71/200], Step: [400/522], Loss: 0.07092110812664032
+Epoch: [71/200], Step: [500/522], Loss: 0.1237347424030304
+text loss: tensor(0.4963)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [72/200], Step: [100/522], Loss: 0.08354004472494125
+Epoch: [72/200], Step: [200/522], Loss: 0.10541662573814392
+Epoch: [72/200], Step: [300/522], Loss: 0.12682650983333588
+Epoch: [72/200], Step: [400/522], Loss: 0.09655601531267166
+Epoch: [72/200], Step: [500/522], Loss: 0.05730152502655983
+text loss: tensor(0.5611)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [73/200], Step: [100/522], Loss: 0.10731431841850281
+Epoch: [73/200], Step: [200/522], Loss: 0.08396804332733154
+Epoch: [73/200], Step: [300/522], Loss: 0.1027405858039856
+Epoch: [73/200], Step: [400/522], Loss: 0.2092769294977188
+Epoch: [73/200], Step: [500/522], Loss: 0.08837348222732544
+text loss: tensor(0.5242)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [74/200], Step: [100/522], Loss: 0.08200572431087494
+Epoch: [74/200], Step: [200/522], Loss: 0.05796065554022789
+Epoch: [74/200], Step: [300/522], Loss: 0.08864426612854004
+Epoch: [74/200], Step: [400/522], Loss: 0.13115978240966797
+Epoch: [74/200], Step: [500/522], Loss: 0.39007413387298584
+text loss: tensor(0.5560)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [75/200], Step: [100/522], Loss: 0.058696307241916656
+Epoch: [75/200], Step: [200/522], Loss: 0.08315683901309967
+Epoch: [75/200], Step: [300/522], Loss: 0.0941057950258255
+Epoch: [75/200], Step: [400/522], Loss: 0.08509624004364014
+Epoch: [75/200], Step: [500/522], Loss: 0.21892394125461578
+text loss: tensor(0.5358)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [76/200], Step: [100/522], Loss: 0.08241337537765503
+Epoch: [76/200], Step: [200/522], Loss: 0.0701993852853775
+Epoch: [76/200], Step: [300/522], Loss: 0.10242073237895966
+Epoch: [76/200], Step: [400/522], Loss: 0.06650534272193909
+Epoch: [76/200], Step: [500/522], Loss: 0.10372699797153473
+text loss: tensor(0.5102)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [77/200], Step: [100/522], Loss: 0.3112480342388153
+Epoch: [77/200], Step: [200/522], Loss: 0.05949290096759796
+Epoch: [77/200], Step: [300/522], Loss: 0.0987800732254982
+Epoch: [77/200], Step: [400/522], Loss: 0.06031334027647972
+Epoch: [77/200], Step: [500/522], Loss: 0.0759562999010086
+text loss: tensor(0.5655)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [78/200], Step: [100/522], Loss: 0.07217010855674744
+Epoch: [78/200], Step: [200/522], Loss: 0.5310502648353577
+Epoch: [78/200], Step: [300/522], Loss: 0.08678722381591797
+Epoch: [78/200], Step: [400/522], Loss: 0.40790513157844543
+Epoch: [78/200], Step: [500/522], Loss: 0.12352246791124344
+text loss: tensor(0.5003)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [79/200], Step: [100/522], Loss: 0.08100288361310959
+Epoch: [79/200], Step: [200/522], Loss: 0.10111883282661438
+Epoch: [79/200], Step: [300/522], Loss: 0.05636817589402199
+Epoch: [79/200], Step: [400/522], Loss: 0.1442224085330963
+Epoch: [79/200], Step: [500/522], Loss: 0.05689097195863724
+text loss: tensor(0.5509)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [80/200], Step: [100/522], Loss: 0.2132631540298462
+Epoch: [80/200], Step: [200/522], Loss: 0.13349729776382446
+Epoch: [80/200], Step: [300/522], Loss: 0.10410032421350479
+Epoch: [80/200], Step: [400/522], Loss: 0.06464111804962158
+Epoch: [80/200], Step: [500/522], Loss: 0.16231094300746918
+text loss: tensor(0.5590)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [81/200], Step: [100/522], Loss: 0.0826619565486908
+Epoch: [81/200], Step: [200/522], Loss: 0.10099666565656662
+Epoch: [81/200], Step: [300/522], Loss: 0.053520675748586655
+Epoch: [81/200], Step: [400/522], Loss: 0.1145285964012146
+Epoch: [81/200], Step: [500/522], Loss: 0.0778319463133812
+text loss: tensor(0.5338)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [82/200], Step: [100/522], Loss: 0.0956481397151947
+Epoch: [82/200], Step: [200/522], Loss: 0.08275531232357025
+Epoch: [82/200], Step: [300/522], Loss: 0.10919514298439026
+Epoch: [82/200], Step: [400/522], Loss: 0.07500649988651276
+Epoch: [82/200], Step: [500/522], Loss: 0.11819081008434296
+text loss: tensor(0.5577)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [83/200], Step: [100/522], Loss: 0.0725507140159607
+Epoch: [83/200], Step: [200/522], Loss: 0.04546508193016052
+Epoch: [83/200], Step: [300/522], Loss: 0.09643489122390747
+Epoch: [83/200], Step: [400/522], Loss: 0.08194925636053085
+Epoch: [83/200], Step: [500/522], Loss: 0.04980454593896866
+text loss: tensor(0.5614)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [84/200], Step: [100/522], Loss: 0.07839777320623398
+Epoch: [84/200], Step: [200/522], Loss: 0.10799156129360199
+Epoch: [84/200], Step: [300/522], Loss: 0.09806033968925476
+Epoch: [84/200], Step: [400/522], Loss: 0.11580696702003479
+Epoch: [84/200], Step: [500/522], Loss: 0.09813718497753143
+text loss: tensor(0.5927)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [85/200], Step: [100/522], Loss: 0.09156500548124313
+Epoch: [85/200], Step: [200/522], Loss: 0.07555332779884338
+Epoch: [85/200], Step: [300/522], Loss: 0.09218037128448486
+Epoch: [85/200], Step: [400/522], Loss: 0.04082806780934334
+Epoch: [85/200], Step: [500/522], Loss: 0.12183306366205215
+text loss: tensor(0.5516)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [86/200], Step: [100/522], Loss: 0.15434452891349792
+Epoch: [86/200], Step: [200/522], Loss: 0.11382211744785309
+Epoch: [86/200], Step: [300/522], Loss: 0.09810822457075119
+Epoch: [86/200], Step: [400/522], Loss: 0.11081648617982864
+Epoch: [86/200], Step: [500/522], Loss: 0.2338038980960846
+text loss: tensor(0.5433)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [87/200], Step: [100/522], Loss: 0.09195864945650101
+Epoch: [87/200], Step: [200/522], Loss: 0.11379086971282959
+Epoch: [87/200], Step: [300/522], Loss: 0.08201834559440613
+Epoch: [87/200], Step: [400/522], Loss: 0.12300394475460052
+Epoch: [87/200], Step: [500/522], Loss: 0.17021772265434265
+text loss: tensor(0.5603)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [88/200], Step: [100/522], Loss: 0.16004326939582825
+Epoch: [88/200], Step: [200/522], Loss: 0.08925630897283554
+Epoch: [88/200], Step: [300/522], Loss: 0.06441181898117065
+Epoch: [88/200], Step: [400/522], Loss: 0.0803719013929367
+Epoch: [88/200], Step: [500/522], Loss: 0.0806565135717392
+text loss: tensor(0.4954)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [89/200], Step: [100/522], Loss: 0.07583436369895935
+Epoch: [89/200], Step: [200/522], Loss: 0.047809138894081116
+Epoch: [89/200], Step: [300/522], Loss: 0.0713583379983902
+Epoch: [89/200], Step: [400/522], Loss: 0.05776146799325943
+Epoch: [89/200], Step: [500/522], Loss: 0.053412918001413345
+text loss: tensor(0.5375)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [90/200], Step: [100/522], Loss: 0.07546214014291763
+Epoch: [90/200], Step: [200/522], Loss: 0.07212971150875092
+Epoch: [90/200], Step: [300/522], Loss: 0.07181523740291595
+Epoch: [90/200], Step: [400/522], Loss: 0.0780833289027214
+Epoch: [90/200], Step: [500/522], Loss: 0.06818308681249619
+text loss: tensor(0.5221)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [91/200], Step: [100/522], Loss: 0.09071952849626541
+Epoch: [91/200], Step: [200/522], Loss: 0.06963343918323517
+Epoch: [91/200], Step: [300/522], Loss: 0.08646240830421448
+Epoch: [91/200], Step: [400/522], Loss: 0.06987972557544708
+Epoch: [91/200], Step: [500/522], Loss: 0.09890416264533997
+text loss: tensor(0.5614)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [92/200], Step: [100/522], Loss: 0.10995960980653763
+Epoch: [92/200], Step: [200/522], Loss: 0.07593033462762833
+Epoch: [92/200], Step: [300/522], Loss: 0.2606087923049927
+Epoch: [92/200], Step: [400/522], Loss: 0.1351589858531952
+Epoch: [92/200], Step: [500/522], Loss: 0.11900195479393005
+text loss: tensor(0.5175)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [93/200], Step: [100/522], Loss: 0.10983973741531372
+Epoch: [93/200], Step: [200/522], Loss: 0.0934789627790451
+Epoch: [93/200], Step: [300/522], Loss: 0.0743134617805481
+Epoch: [93/200], Step: [400/522], Loss: 0.08470287919044495
+Epoch: [93/200], Step: [500/522], Loss: 0.09406287223100662
+text loss: tensor(0.5233)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [94/200], Step: [100/522], Loss: 0.11294641345739365
+Epoch: [94/200], Step: [200/522], Loss: 0.12953782081604004
+Epoch: [94/200], Step: [300/522], Loss: 0.049177948385477066
+Epoch: [94/200], Step: [400/522], Loss: 0.0818830132484436
+Epoch: [94/200], Step: [500/522], Loss: 0.06634685397148132
+text loss: tensor(0.5150)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [95/200], Step: [100/522], Loss: 0.2773219347000122
+Epoch: [95/200], Step: [200/522], Loss: 0.0504402220249176
+Epoch: [95/200], Step: [300/522], Loss: 0.09336614608764648
+Epoch: [95/200], Step: [400/522], Loss: 0.1358654499053955
+Epoch: [95/200], Step: [500/522], Loss: 0.07004279643297195
+text loss: tensor(0.4923)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [96/200], Step: [100/522], Loss: 0.16708411276340485
+Epoch: [96/200], Step: [200/522], Loss: 0.04483729600906372
+Epoch: [96/200], Step: [300/522], Loss: 0.06638096272945404
+Epoch: [96/200], Step: [400/522], Loss: 0.17228342592716217
+Epoch: [96/200], Step: [500/522], Loss: 0.10999630391597748
+text loss: tensor(0.4794)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [97/200], Step: [100/522], Loss: 0.06483975052833557
+Epoch: [97/200], Step: [200/522], Loss: 0.08210265636444092
+Epoch: [97/200], Step: [300/522], Loss: 0.06856665015220642
+Epoch: [97/200], Step: [400/522], Loss: 0.11027838289737701
+Epoch: [97/200], Step: [500/522], Loss: 0.08836932480335236
+text loss: tensor(0.5451)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [98/200], Step: [100/522], Loss: 0.15684135258197784
+Epoch: [98/200], Step: [200/522], Loss: 0.05185992270708084
+Epoch: [98/200], Step: [300/522], Loss: 0.1388000100851059
+Epoch: [98/200], Step: [400/522], Loss: 0.039022572338581085
+Epoch: [98/200], Step: [500/522], Loss: 0.10576765239238739
+text loss: tensor(0.5016)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [99/200], Step: [100/522], Loss: 0.0879923552274704
+Epoch: [99/200], Step: [200/522], Loss: 0.11184060573577881
+Epoch: [99/200], Step: [300/522], Loss: 0.10508576780557632
+Epoch: [99/200], Step: [400/522], Loss: 0.139167919754982
+Epoch: [99/200], Step: [500/522], Loss: 0.1588025689125061
+text loss: tensor(0.5599)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [100/200], Step: [100/522], Loss: 0.07646678388118744
+Epoch: [100/200], Step: [200/522], Loss: 0.09080865979194641
+Epoch: [100/200], Step: [300/522], Loss: 0.05756339430809021
+Epoch: [100/200], Step: [400/522], Loss: 0.08701140433549881
+Epoch: [100/200], Step: [500/522], Loss: 0.08106846362352371
+text loss: tensor(0.5298)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [101/200], Step: [100/522], Loss: 0.08469076454639435
+Epoch: [101/200], Step: [200/522], Loss: 0.5528815388679504
+Epoch: [101/200], Step: [300/522], Loss: 0.052291981875896454
+Epoch: [101/200], Step: [400/522], Loss: 0.15154698491096497
+Epoch: [101/200], Step: [500/522], Loss: 0.07732411473989487
+text loss: tensor(0.5456)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [102/200], Step: [100/522], Loss: 0.04425738379359245
+Epoch: [102/200], Step: [200/522], Loss: 0.10587767511606216
+Epoch: [102/200], Step: [300/522], Loss: 0.07744661718606949
+Epoch: [102/200], Step: [400/522], Loss: 0.07624226808547974
+Epoch: [102/200], Step: [500/522], Loss: 0.29472479224205017
+text loss: tensor(0.5319)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [103/200], Step: [100/522], Loss: 0.0657605230808258
+Epoch: [103/200], Step: [200/522], Loss: 0.08639557659626007
+Epoch: [103/200], Step: [300/522], Loss: 0.05664295703172684
+Epoch: [103/200], Step: [400/522], Loss: 0.0753902792930603
+Epoch: [103/200], Step: [500/522], Loss: 0.08016866445541382
+text loss: tensor(0.5254)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [104/200], Step: [100/522], Loss: 0.058511871844530106
+Epoch: [104/200], Step: [200/522], Loss: 0.06226568669080734
+Epoch: [104/200], Step: [300/522], Loss: 0.052571285516023636
+Epoch: [104/200], Step: [400/522], Loss: 0.19665616750717163
+Epoch: [104/200], Step: [500/522], Loss: 0.08432941138744354
+text loss: tensor(0.5154)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [105/200], Step: [100/522], Loss: 0.0653502345085144
+Epoch: [105/200], Step: [200/522], Loss: 0.04821830242872238
+Epoch: [105/200], Step: [300/522], Loss: 0.048256829380989075
+Epoch: [105/200], Step: [400/522], Loss: 0.07102641463279724
+Epoch: [105/200], Step: [500/522], Loss: 0.3051699697971344
+text loss: tensor(0.5137)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [106/200], Step: [100/522], Loss: 0.08574660122394562
+Epoch: [106/200], Step: [200/522], Loss: 0.0766097828745842
+Epoch: [106/200], Step: [300/522], Loss: 0.05631899833679199
+Epoch: [106/200], Step: [400/522], Loss: 0.09726934134960175
+Epoch: [106/200], Step: [500/522], Loss: 0.06653989851474762
+text loss: tensor(0.4910)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [107/200], Step: [100/522], Loss: 0.06558822095394135
+Epoch: [107/200], Step: [200/522], Loss: 0.08307669311761856
+Epoch: [107/200], Step: [300/522], Loss: 0.08036187291145325
+Epoch: [107/200], Step: [400/522], Loss: 0.15329207479953766
+Epoch: [107/200], Step: [500/522], Loss: 0.08792522549629211
+text loss: tensor(0.5190)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [108/200], Step: [100/522], Loss: 0.09664779156446457
+Epoch: [108/200], Step: [200/522], Loss: 0.05327630043029785
+Epoch: [108/200], Step: [300/522], Loss: 0.07348291575908661
+Epoch: [108/200], Step: [400/522], Loss: 0.04202546551823616
+Epoch: [108/200], Step: [500/522], Loss: 0.10049507021903992
+text loss: tensor(0.5117)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [109/200], Step: [100/522], Loss: 0.08025309443473816
+Epoch: [109/200], Step: [200/522], Loss: 0.04765072837471962
+Epoch: [109/200], Step: [300/522], Loss: 0.07506801933050156
+Epoch: [109/200], Step: [400/522], Loss: 0.09219199419021606
+Epoch: [109/200], Step: [500/522], Loss: 0.06885626912117004
+text loss: tensor(0.5339)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [110/200], Step: [100/522], Loss: 0.057187847793102264
+Epoch: [110/200], Step: [200/522], Loss: 0.04587886855006218
+Epoch: [110/200], Step: [300/522], Loss: 0.10860448330640793
+Epoch: [110/200], Step: [400/522], Loss: 0.04563774913549423
+Epoch: [110/200], Step: [500/522], Loss: 0.12269725650548935
+text loss: tensor(0.5042)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [111/200], Step: [100/522], Loss: 0.06106681376695633
+Epoch: [111/200], Step: [200/522], Loss: 0.0987764298915863
+Epoch: [111/200], Step: [300/522], Loss: 0.07119704782962799
+Epoch: [111/200], Step: [400/522], Loss: 0.16471520066261292
+Epoch: [111/200], Step: [500/522], Loss: 0.10664914548397064
+text loss: tensor(0.4916)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [112/200], Step: [100/522], Loss: 0.049687135964632034
+Epoch: [112/200], Step: [200/522], Loss: 0.07914093881845474
+Epoch: [112/200], Step: [300/522], Loss: 0.06649832427501678
+Epoch: [112/200], Step: [400/522], Loss: 0.07518615573644638
+Epoch: [112/200], Step: [500/522], Loss: 0.2009318321943283
+text loss: tensor(0.5376)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [113/200], Step: [100/522], Loss: 0.052230529487133026
+Epoch: [113/200], Step: [200/522], Loss: 0.05279630422592163
+Epoch: [113/200], Step: [300/522], Loss: 0.14240378141403198
+Epoch: [113/200], Step: [400/522], Loss: 0.1567911058664322
+Epoch: [113/200], Step: [500/522], Loss: 0.06478767842054367
+text loss: tensor(0.5294)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [114/200], Step: [100/522], Loss: 0.08959858119487762
+Epoch: [114/200], Step: [200/522], Loss: 0.05603206530213356
+Epoch: [114/200], Step: [300/522], Loss: 0.061897698789834976
+Epoch: [114/200], Step: [400/522], Loss: 0.0833326205611229
+Epoch: [114/200], Step: [500/522], Loss: 0.06266657263040543
+text loss: tensor(0.5096)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [115/200], Step: [100/522], Loss: 0.05206277221441269
+Epoch: [115/200], Step: [200/522], Loss: 0.1516321897506714
+Epoch: [115/200], Step: [300/522], Loss: 0.05883963406085968
+Epoch: [115/200], Step: [400/522], Loss: 0.06932472437620163
+Epoch: [115/200], Step: [500/522], Loss: 0.09197165071964264
+text loss: tensor(0.5532)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [116/200], Step: [100/522], Loss: 0.07095833122730255
+Epoch: [116/200], Step: [200/522], Loss: 0.05423450842499733
+Epoch: [116/200], Step: [300/522], Loss: 0.05829185992479324
+Epoch: [116/200], Step: [400/522], Loss: 0.051810361444950104
+Epoch: [116/200], Step: [500/522], Loss: 0.050301581621170044
+text loss: tensor(0.5414)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [117/200], Step: [100/522], Loss: 0.06816378235816956
+Epoch: [117/200], Step: [200/522], Loss: 0.04931209981441498
+Epoch: [117/200], Step: [300/522], Loss: 0.06290259957313538
+Epoch: [117/200], Step: [400/522], Loss: 0.06862187385559082
+Epoch: [117/200], Step: [500/522], Loss: 0.0724557489156723
+text loss: tensor(0.4975)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [118/200], Step: [100/522], Loss: 0.4637574255466461
+Epoch: [118/200], Step: [200/522], Loss: 0.2116883397102356
+Epoch: [118/200], Step: [300/522], Loss: 0.053236499428749084
+Epoch: [118/200], Step: [400/522], Loss: 0.07106614112854004
+Epoch: [118/200], Step: [500/522], Loss: 0.06550446897745132
+text loss: tensor(0.5094)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [119/200], Step: [100/522], Loss: 0.11808612942695618
+Epoch: [119/200], Step: [200/522], Loss: 0.13489043712615967
+Epoch: [119/200], Step: [300/522], Loss: 0.031718991696834564
+Epoch: [119/200], Step: [400/522], Loss: 0.05315592139959335
+Epoch: [119/200], Step: [500/522], Loss: 0.04653838649392128
+text loss: tensor(0.4953)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [120/200], Step: [100/522], Loss: 0.07641531527042389
+Epoch: [120/200], Step: [200/522], Loss: 0.05345478653907776
+Epoch: [120/200], Step: [300/522], Loss: 0.1400853991508484
+Epoch: [120/200], Step: [400/522], Loss: 0.05685838311910629
+Epoch: [120/200], Step: [500/522], Loss: 0.048889581114053726
+text loss: tensor(0.5111)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [121/200], Step: [100/522], Loss: 0.07446955889463425
+Epoch: [121/200], Step: [200/522], Loss: 0.029126770794391632
+Epoch: [121/200], Step: [300/522], Loss: 0.04832003638148308
+Epoch: [121/200], Step: [400/522], Loss: 0.058225635439157486
+Epoch: [121/200], Step: [500/522], Loss: 0.0506989024579525
+text loss: tensor(0.5180)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [122/200], Step: [100/522], Loss: 0.06134018301963806
+Epoch: [122/200], Step: [200/522], Loss: 0.05572272092103958
+Epoch: [122/200], Step: [300/522], Loss: 0.06524860858917236
+Epoch: [122/200], Step: [400/522], Loss: 0.042853422462940216
+Epoch: [122/200], Step: [500/522], Loss: 0.05880088359117508
+text loss: tensor(0.5330)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [123/200], Step: [100/522], Loss: 0.1012999564409256
+Epoch: [123/200], Step: [200/522], Loss: 0.03413642942905426
+Epoch: [123/200], Step: [300/522], Loss: 0.07310935109853745
+Epoch: [123/200], Step: [400/522], Loss: 0.058753591030836105
+Epoch: [123/200], Step: [500/522], Loss: 0.057019833475351334
+text loss: tensor(0.5194)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [124/200], Step: [100/522], Loss: 0.06601473689079285
+Epoch: [124/200], Step: [200/522], Loss: 0.05866891145706177
+Epoch: [124/200], Step: [300/522], Loss: 0.07695511728525162
+Epoch: [124/200], Step: [400/522], Loss: 0.0429258793592453
+Epoch: [124/200], Step: [500/522], Loss: 0.0689644068479538
+text loss: tensor(0.5323)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [125/200], Step: [100/522], Loss: 0.05009295418858528
+Epoch: [125/200], Step: [200/522], Loss: 0.025615699589252472
+Epoch: [125/200], Step: [300/522], Loss: 0.04186909645795822
+Epoch: [125/200], Step: [400/522], Loss: 0.07184469699859619
+Epoch: [125/200], Step: [500/522], Loss: 0.12429540604352951
+text loss: tensor(0.4904)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [126/200], Step: [100/522], Loss: 0.06866340339183807
+Epoch: [126/200], Step: [200/522], Loss: 0.0884806215763092
+Epoch: [126/200], Step: [300/522], Loss: 0.07818363606929779
+Epoch: [126/200], Step: [400/522], Loss: 0.06746889650821686
+Epoch: [126/200], Step: [500/522], Loss: 0.2859228849411011
+text loss: tensor(0.4961)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [127/200], Step: [100/522], Loss: 0.06050422787666321
+Epoch: [127/200], Step: [200/522], Loss: 0.061100102961063385
+Epoch: [127/200], Step: [300/522], Loss: 0.06711477041244507
+Epoch: [127/200], Step: [400/522], Loss: 0.05588699132204056
+Epoch: [127/200], Step: [500/522], Loss: 0.06895788013935089
+text loss: tensor(0.5066)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [128/200], Step: [100/522], Loss: 0.05404762178659439
+Epoch: [128/200], Step: [200/522], Loss: 0.052227456122636795
+Epoch: [128/200], Step: [300/522], Loss: 0.0811181515455246
+Epoch: [128/200], Step: [400/522], Loss: 0.06759217381477356
+Epoch: [128/200], Step: [500/522], Loss: 0.07054489850997925
+text loss: tensor(0.4976)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [129/200], Step: [100/522], Loss: 0.038931477814912796
+Epoch: [129/200], Step: [200/522], Loss: 0.08593505620956421
+Epoch: [129/200], Step: [300/522], Loss: 0.11916372179985046
+Epoch: [129/200], Step: [400/522], Loss: 0.04525046423077583
+Epoch: [129/200], Step: [500/522], Loss: 0.05308346450328827
+text loss: tensor(0.5139)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [130/200], Step: [100/522], Loss: 0.03867010027170181
+Epoch: [130/200], Step: [200/522], Loss: 0.07706177234649658
+Epoch: [130/200], Step: [300/522], Loss: 0.07791883498430252
+Epoch: [130/200], Step: [400/522], Loss: 0.041394785046577454
+Epoch: [130/200], Step: [500/522], Loss: 0.07671606540679932
+text loss: tensor(0.4948)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [131/200], Step: [100/522], Loss: 0.049722544848918915
+Epoch: [131/200], Step: [200/522], Loss: 0.04438481107354164
+Epoch: [131/200], Step: [300/522], Loss: 0.030083652585744858
+Epoch: [131/200], Step: [400/522], Loss: 0.06441906094551086
+Epoch: [131/200], Step: [500/522], Loss: 0.06081143394112587
+text loss: tensor(0.4892)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [132/200], Step: [100/522], Loss: 0.05098210275173187
+Epoch: [132/200], Step: [200/522], Loss: 0.06054049730300903
+Epoch: [132/200], Step: [300/522], Loss: 0.0725954920053482
+Epoch: [132/200], Step: [400/522], Loss: 0.06088162958621979
+Epoch: [132/200], Step: [500/522], Loss: 0.12872055172920227
+text loss: tensor(0.5092)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [133/200], Step: [100/522], Loss: 0.03973539173603058
+Epoch: [133/200], Step: [200/522], Loss: 0.054577529430389404
+Epoch: [133/200], Step: [300/522], Loss: 0.06441724300384521
+Epoch: [133/200], Step: [400/522], Loss: 0.07168085873126984
+Epoch: [133/200], Step: [500/522], Loss: 0.06705330312252045
+text loss: tensor(0.5101)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [134/200], Step: [100/522], Loss: 0.06792059540748596
+Epoch: [134/200], Step: [200/522], Loss: 0.05509696155786514
+Epoch: [134/200], Step: [300/522], Loss: 0.08736435323953629
+Epoch: [134/200], Step: [400/522], Loss: 0.04929906874895096
+Epoch: [134/200], Step: [500/522], Loss: 0.05492020770907402
+text loss: tensor(0.4995)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [135/200], Step: [100/522], Loss: 0.0751807689666748
+Epoch: [135/200], Step: [200/522], Loss: 0.0533004105091095
+Epoch: [135/200], Step: [300/522], Loss: 0.06388728320598602
+Epoch: [135/200], Step: [400/522], Loss: 0.06092815473675728
+Epoch: [135/200], Step: [500/522], Loss: 0.02464810013771057
+text loss: tensor(0.4972)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [136/200], Step: [100/522], Loss: 0.18571242690086365
+Epoch: [136/200], Step: [200/522], Loss: 0.08974671363830566
+Epoch: [136/200], Step: [300/522], Loss: 0.06840045750141144
+Epoch: [136/200], Step: [400/522], Loss: 0.22121784090995789
+Epoch: [136/200], Step: [500/522], Loss: 0.030574379488825798
+text loss: tensor(0.5135)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [137/200], Step: [100/522], Loss: 0.06685643643140793
+Epoch: [137/200], Step: [200/522], Loss: 0.04359441250562668
+Epoch: [137/200], Step: [300/522], Loss: 0.06876342743635178
+Epoch: [137/200], Step: [400/522], Loss: 0.059610046446323395
+Epoch: [137/200], Step: [500/522], Loss: 0.08275406062602997
+text loss: tensor(0.5136)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [138/200], Step: [100/522], Loss: 0.061717964708805084
+Epoch: [138/200], Step: [200/522], Loss: 0.050778474658727646
+Epoch: [138/200], Step: [300/522], Loss: 0.04054706543684006
+Epoch: [138/200], Step: [400/522], Loss: 0.06383071839809418
+Epoch: [138/200], Step: [500/522], Loss: 0.06627850234508514
+text loss: tensor(0.4966)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [139/200], Step: [100/522], Loss: 0.07100561261177063
+Epoch: [139/200], Step: [200/522], Loss: 0.06693005561828613
+Epoch: [139/200], Step: [300/522], Loss: 0.1549060344696045
+Epoch: [139/200], Step: [400/522], Loss: 0.19037176668643951
+Epoch: [139/200], Step: [500/522], Loss: 0.08101603388786316
+text loss: tensor(0.5392)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [140/200], Step: [100/522], Loss: 0.05904734507203102
+Epoch: [140/200], Step: [200/522], Loss: 0.08202328532934189
+Epoch: [140/200], Step: [300/522], Loss: 0.09344791620969772
+Epoch: [140/200], Step: [400/522], Loss: 0.05466780439019203
+Epoch: [140/200], Step: [500/522], Loss: 0.05929523706436157
+text loss: tensor(0.5434)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [141/200], Step: [100/522], Loss: 0.20827284455299377
+Epoch: [141/200], Step: [200/522], Loss: 0.08674982935190201
+Epoch: [141/200], Step: [300/522], Loss: 0.08193036913871765
+Epoch: [141/200], Step: [400/522], Loss: 0.04146294295787811
+Epoch: [141/200], Step: [500/522], Loss: 0.06683670729398727
+text loss: tensor(0.5182)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [142/200], Step: [100/522], Loss: 0.3599786162376404
+Epoch: [142/200], Step: [200/522], Loss: 0.10482727736234665
+Epoch: [142/200], Step: [300/522], Loss: 0.07576541602611542
+Epoch: [142/200], Step: [400/522], Loss: 0.06579811871051788
+Epoch: [142/200], Step: [500/522], Loss: 0.05803178623318672
+text loss: tensor(0.4989)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [143/200], Step: [100/522], Loss: 0.04268893972039223
+Epoch: [143/200], Step: [200/522], Loss: 0.044858526438474655
+Epoch: [143/200], Step: [300/522], Loss: 0.0658312737941742
+Epoch: [143/200], Step: [400/522], Loss: 0.04860600829124451
+Epoch: [143/200], Step: [500/522], Loss: 0.059497982263565063
+text loss: tensor(0.4928)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [144/200], Step: [100/522], Loss: 0.05543595179915428
+Epoch: [144/200], Step: [200/522], Loss: 0.04316531866788864
+Epoch: [144/200], Step: [300/522], Loss: 0.059477414935827255
+Epoch: [144/200], Step: [400/522], Loss: 0.04844364523887634
+Epoch: [144/200], Step: [500/522], Loss: 0.1241072341799736
+text loss: tensor(0.5388)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [145/200], Step: [100/522], Loss: 0.08744007349014282
+Epoch: [145/200], Step: [200/522], Loss: 0.07116475701332092
+Epoch: [145/200], Step: [300/522], Loss: 0.05402824282646179
+Epoch: [145/200], Step: [400/522], Loss: 0.046673379838466644
+Epoch: [145/200], Step: [500/522], Loss: 0.04588404670357704
+text loss: tensor(0.5064)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [146/200], Step: [100/522], Loss: 0.05054127424955368
+Epoch: [146/200], Step: [200/522], Loss: 0.15264634788036346
+Epoch: [146/200], Step: [300/522], Loss: 0.042996857315301895
+Epoch: [146/200], Step: [400/522], Loss: 0.08319570869207382
+Epoch: [146/200], Step: [500/522], Loss: 0.056466490030288696
+text loss: tensor(0.5016)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [147/200], Step: [100/522], Loss: 0.15769563615322113
+Epoch: [147/200], Step: [200/522], Loss: 0.0413944311439991
+Epoch: [147/200], Step: [300/522], Loss: 0.07851465046405792
+Epoch: [147/200], Step: [400/522], Loss: 0.05459936708211899
+Epoch: [147/200], Step: [500/522], Loss: 0.05312783643603325
+text loss: tensor(0.5161)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [148/200], Step: [100/522], Loss: 0.08570844680070877
+Epoch: [148/200], Step: [200/522], Loss: 0.060614217072725296
+Epoch: [148/200], Step: [300/522], Loss: 0.0738106220960617
+Epoch: [148/200], Step: [400/522], Loss: 0.04879361391067505
+Epoch: [148/200], Step: [500/522], Loss: 0.09242984652519226
+text loss: tensor(0.4896)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [149/200], Step: [100/522], Loss: 0.17863881587982178
+Epoch: [149/200], Step: [200/522], Loss: 0.05498102679848671
+Epoch: [149/200], Step: [300/522], Loss: 0.057066552340984344
+Epoch: [149/200], Step: [400/522], Loss: 0.04315207526087761
+Epoch: [149/200], Step: [500/522], Loss: 0.051839351654052734
+text loss: tensor(0.5262)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [150/200], Step: [100/522], Loss: 0.04102613776922226
+Epoch: [150/200], Step: [200/522], Loss: 0.04448862001299858
+Epoch: [150/200], Step: [300/522], Loss: 0.04834870994091034
+Epoch: [150/200], Step: [400/522], Loss: 0.04800619184970856
+Epoch: [150/200], Step: [500/522], Loss: 0.09128963202238083
+text loss: tensor(0.5289)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [151/200], Step: [100/522], Loss: 0.32397550344467163
+Epoch: [151/200], Step: [200/522], Loss: 0.055890701711177826
+Epoch: [151/200], Step: [300/522], Loss: 0.11036678403615952
+Epoch: [151/200], Step: [400/522], Loss: 0.06519696116447449
+Epoch: [151/200], Step: [500/522], Loss: 0.07278506457805634
+text loss: tensor(0.5082)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [152/200], Step: [100/522], Loss: 0.04539117217063904
+Epoch: [152/200], Step: [200/522], Loss: 0.04929443076252937
+Epoch: [152/200], Step: [300/522], Loss: 0.08617635816335678
+Epoch: [152/200], Step: [400/522], Loss: 0.04316844046115875
+Epoch: [152/200], Step: [500/522], Loss: 0.06776265799999237
+text loss: tensor(0.5121)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [153/200], Step: [100/522], Loss: 0.06451243162155151
+Epoch: [153/200], Step: [200/522], Loss: 0.049724724143743515
+Epoch: [153/200], Step: [300/522], Loss: 0.03341468423604965
+Epoch: [153/200], Step: [400/522], Loss: 0.039459843188524246
+Epoch: [153/200], Step: [500/522], Loss: 0.06807359308004379
+text loss: tensor(0.5077)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [154/200], Step: [100/522], Loss: 0.061191048473119736
+Epoch: [154/200], Step: [200/522], Loss: 0.052016664296388626
+Epoch: [154/200], Step: [300/522], Loss: 0.0627036839723587
+Epoch: [154/200], Step: [400/522], Loss: 0.05444555729627609
+Epoch: [154/200], Step: [500/522], Loss: 0.09138765931129456
+text loss: tensor(0.5214)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [155/200], Step: [100/522], Loss: 0.05555354803800583
+Epoch: [155/200], Step: [200/522], Loss: 0.06062377244234085
+Epoch: [155/200], Step: [300/522], Loss: 0.05712459981441498
+Epoch: [155/200], Step: [400/522], Loss: 0.04887852072715759
+Epoch: [155/200], Step: [500/522], Loss: 0.04196590930223465
+text loss: tensor(0.5104)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [156/200], Step: [100/522], Loss: 0.06593181192874908
+Epoch: [156/200], Step: [200/522], Loss: 0.039319463074207306
+Epoch: [156/200], Step: [300/522], Loss: 0.04213395342230797
+Epoch: [156/200], Step: [400/522], Loss: 0.09826627373695374
+Epoch: [156/200], Step: [500/522], Loss: 0.061750806868076324
+text loss: tensor(0.4836)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [157/200], Step: [100/522], Loss: 0.08783112466335297
+Epoch: [157/200], Step: [200/522], Loss: 0.07923585176467896
+Epoch: [157/200], Step: [300/522], Loss: 0.088178351521492
+Epoch: [157/200], Step: [400/522], Loss: 0.08872591704130173
+Epoch: [157/200], Step: [500/522], Loss: 0.050743263214826584
+text loss: tensor(0.5198)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [158/200], Step: [100/522], Loss: 0.051543399691581726
+Epoch: [158/200], Step: [200/522], Loss: 0.04441685974597931
+Epoch: [158/200], Step: [300/522], Loss: 0.05826093629002571
+Epoch: [158/200], Step: [400/522], Loss: 0.0527019202709198
+Epoch: [158/200], Step: [500/522], Loss: 0.046998828649520874
+text loss: tensor(0.5346)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [159/200], Step: [100/522], Loss: 0.0715610533952713
+Epoch: [159/200], Step: [200/522], Loss: 0.09876235574483871
+Epoch: [159/200], Step: [300/522], Loss: 0.19130787253379822
+Epoch: [159/200], Step: [400/522], Loss: 0.038534015417099
+Epoch: [159/200], Step: [500/522], Loss: 0.0451362207531929
+text loss: tensor(0.5434)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [160/200], Step: [100/522], Loss: 0.03154105693101883
+Epoch: [160/200], Step: [200/522], Loss: 0.06261760741472244
+Epoch: [160/200], Step: [300/522], Loss: 0.03629089891910553
+Epoch: [160/200], Step: [400/522], Loss: 0.06702347099781036
+Epoch: [160/200], Step: [500/522], Loss: 0.056536175310611725
+text loss: tensor(0.5048)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [161/200], Step: [100/522], Loss: 0.04791680723428726
+Epoch: [161/200], Step: [200/522], Loss: 0.07296349853277206
+Epoch: [161/200], Step: [300/522], Loss: 0.06709475815296173
+Epoch: [161/200], Step: [400/522], Loss: 0.07501086592674255
+Epoch: [161/200], Step: [500/522], Loss: 0.03432747721672058
+text loss: tensor(0.4818)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [162/200], Step: [100/522], Loss: 0.050446584820747375
+Epoch: [162/200], Step: [200/522], Loss: 0.08794867247343063
+Epoch: [162/200], Step: [300/522], Loss: 0.042975619435310364
+Epoch: [162/200], Step: [400/522], Loss: 0.045855216681957245
+Epoch: [162/200], Step: [500/522], Loss: 0.06660174578428268
+text loss: tensor(0.5047)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [163/200], Step: [100/522], Loss: 0.06673458218574524
+Epoch: [163/200], Step: [200/522], Loss: 0.04861471801996231
+Epoch: [163/200], Step: [300/522], Loss: 0.0704159289598465
+Epoch: [163/200], Step: [400/522], Loss: 0.05732077360153198
+Epoch: [163/200], Step: [500/522], Loss: 0.04570440948009491
+text loss: tensor(0.5251)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [164/200], Step: [100/522], Loss: 0.07232896238565445
+Epoch: [164/200], Step: [200/522], Loss: 0.04920860379934311
+Epoch: [164/200], Step: [300/522], Loss: 0.057029690593481064
+Epoch: [164/200], Step: [400/522], Loss: 0.03789008781313896
+Epoch: [164/200], Step: [500/522], Loss: 0.09089212119579315
+text loss: tensor(0.5075)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [165/200], Step: [100/522], Loss: 0.07233347743749619
+Epoch: [165/200], Step: [200/522], Loss: 0.21630613505840302
+Epoch: [165/200], Step: [300/522], Loss: 0.05059877783060074
+Epoch: [165/200], Step: [400/522], Loss: 0.06408067792654037
+Epoch: [165/200], Step: [500/522], Loss: 0.059490036219358444
+text loss: tensor(0.5427)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [166/200], Step: [100/522], Loss: 0.034076057374477386
+Epoch: [166/200], Step: [200/522], Loss: 0.09398458898067474
+Epoch: [166/200], Step: [300/522], Loss: 0.04845667630434036
+Epoch: [166/200], Step: [400/522], Loss: 0.11688079684972763
+Epoch: [166/200], Step: [500/522], Loss: 0.1421455591917038
+text loss: tensor(0.5207)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [167/200], Step: [100/522], Loss: 0.06643035262823105
+Epoch: [167/200], Step: [200/522], Loss: 0.05562381446361542
+Epoch: [167/200], Step: [300/522], Loss: 0.1395699828863144
+Epoch: [167/200], Step: [400/522], Loss: 0.1359054446220398
+Epoch: [167/200], Step: [500/522], Loss: 0.030322052538394928
+text loss: tensor(0.4911)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [168/200], Step: [100/522], Loss: 0.15991702675819397
+Epoch: [168/200], Step: [200/522], Loss: 0.04299108684062958
+Epoch: [168/200], Step: [300/522], Loss: 0.031280577182769775
+Epoch: [168/200], Step: [400/522], Loss: 0.09199386835098267
+Epoch: [168/200], Step: [500/522], Loss: 0.06245647370815277
+text loss: tensor(0.5378)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [169/200], Step: [100/522], Loss: 0.08916744589805603
+Epoch: [169/200], Step: [200/522], Loss: 0.05941946431994438
+Epoch: [169/200], Step: [300/522], Loss: 0.03968366980552673
+Epoch: [169/200], Step: [400/522], Loss: 0.06833489239215851
+Epoch: [169/200], Step: [500/522], Loss: 0.05174287408590317
+text loss: tensor(0.5315)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [170/200], Step: [100/522], Loss: 0.03111136704683304
+Epoch: [170/200], Step: [200/522], Loss: 0.0459737665951252
+Epoch: [170/200], Step: [300/522], Loss: 0.029834235087037086
+Epoch: [170/200], Step: [400/522], Loss: 0.09516793489456177
+Epoch: [170/200], Step: [500/522], Loss: 0.06323762983083725
+text loss: tensor(0.5292)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [171/200], Step: [100/522], Loss: 0.04169151186943054
+Epoch: [171/200], Step: [200/522], Loss: 0.048162493854761124
+Epoch: [171/200], Step: [300/522], Loss: 0.0651492327451706
+Epoch: [171/200], Step: [400/522], Loss: 0.04274537414312363
+Epoch: [171/200], Step: [500/522], Loss: 0.06844263523817062
+text loss: tensor(0.4961)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [172/200], Step: [100/522], Loss: 0.048960573971271515
+Epoch: [172/200], Step: [200/522], Loss: 0.04975401610136032
+Epoch: [172/200], Step: [300/522], Loss: 0.0546189621090889
+Epoch: [172/200], Step: [400/522], Loss: 0.04430106654763222
+Epoch: [172/200], Step: [500/522], Loss: 0.05007287859916687
+text loss: tensor(0.5006)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [173/200], Step: [100/522], Loss: 0.024884957820177078
+Epoch: [173/200], Step: [200/522], Loss: 0.05217992886900902
+Epoch: [173/200], Step: [300/522], Loss: 0.07720303535461426
+Epoch: [173/200], Step: [400/522], Loss: 0.10944074392318726
+Epoch: [173/200], Step: [500/522], Loss: 0.05175028741359711
+text loss: tensor(0.5042)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [174/200], Step: [100/522], Loss: 0.03499545902013779
+Epoch: [174/200], Step: [200/522], Loss: 0.07549956440925598
+Epoch: [174/200], Step: [300/522], Loss: 0.08861471712589264
+Epoch: [174/200], Step: [400/522], Loss: 0.13453328609466553
+Epoch: [174/200], Step: [500/522], Loss: 0.12594471871852875
+text loss: tensor(0.5052)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [175/200], Step: [100/522], Loss: 0.0316985622048378
+Epoch: [175/200], Step: [200/522], Loss: 0.12153324484825134
+Epoch: [175/200], Step: [300/522], Loss: 0.07205098122358322
+Epoch: [175/200], Step: [400/522], Loss: 0.0760926753282547
+Epoch: [175/200], Step: [500/522], Loss: 0.07102593779563904
+text loss: tensor(0.5049)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [176/200], Step: [100/522], Loss: 0.051529962569475174
+Epoch: [176/200], Step: [200/522], Loss: 0.058337848633527756
+Epoch: [176/200], Step: [300/522], Loss: 0.049096062779426575
+Epoch: [176/200], Step: [400/522], Loss: 0.042395565658807755
+Epoch: [176/200], Step: [500/522], Loss: 0.07864467799663544
+text loss: tensor(0.5095)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [177/200], Step: [100/522], Loss: 0.096896693110466
+Epoch: [177/200], Step: [200/522], Loss: 0.05980546772480011
+Epoch: [177/200], Step: [300/522], Loss: 0.040851421654224396
+Epoch: [177/200], Step: [400/522], Loss: 0.07903217524290085
+Epoch: [177/200], Step: [500/522], Loss: 0.05418911576271057
+text loss: tensor(0.4918)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [178/200], Step: [100/522], Loss: 0.049877457320690155
+Epoch: [178/200], Step: [200/522], Loss: 0.14793932437896729
+Epoch: [178/200], Step: [300/522], Loss: 0.12200365215539932
+Epoch: [178/200], Step: [400/522], Loss: 0.030560899525880814
+Epoch: [178/200], Step: [500/522], Loss: 0.05684306472539902
+text loss: tensor(0.5059)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [179/200], Step: [100/522], Loss: 0.044306714087724686
+Epoch: [179/200], Step: [200/522], Loss: 0.042280808091163635
+Epoch: [179/200], Step: [300/522], Loss: 0.060903094708919525
+Epoch: [179/200], Step: [400/522], Loss: 0.03914271295070648
+Epoch: [179/200], Step: [500/522], Loss: 0.04435399919748306
+text loss: tensor(0.4811)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [180/200], Step: [100/522], Loss: 0.05221652612090111
+Epoch: [180/200], Step: [200/522], Loss: 0.06098605692386627
+Epoch: [180/200], Step: [300/522], Loss: 0.18530432879924774
+Epoch: [180/200], Step: [400/522], Loss: 0.032683685421943665
+Epoch: [180/200], Step: [500/522], Loss: 0.08182106912136078
+text loss: tensor(0.4872)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [181/200], Step: [100/522], Loss: 0.0420704185962677
+Epoch: [181/200], Step: [200/522], Loss: 0.19508136808872223
+Epoch: [181/200], Step: [300/522], Loss: 0.049363765865564346
+Epoch: [181/200], Step: [400/522], Loss: 0.04661315679550171
+Epoch: [181/200], Step: [500/522], Loss: 0.04436540603637695
+text loss: tensor(0.5010)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [182/200], Step: [100/522], Loss: 0.05861451476812363
+Epoch: [182/200], Step: [200/522], Loss: 0.07171013206243515
+Epoch: [182/200], Step: [300/522], Loss: 0.06266665458679199
+Epoch: [182/200], Step: [400/522], Loss: 0.06081704795360565
+Epoch: [182/200], Step: [500/522], Loss: 0.040452778339385986
+text loss: tensor(0.5121)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [183/200], Step: [100/522], Loss: 0.09180588275194168
+Epoch: [183/200], Step: [200/522], Loss: 0.05145501345396042
+Epoch: [183/200], Step: [300/522], Loss: 0.0932897999882698
+Epoch: [183/200], Step: [400/522], Loss: 0.03358253091573715
+Epoch: [183/200], Step: [500/522], Loss: 0.06311359256505966
+text loss: tensor(0.5076)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [184/200], Step: [100/522], Loss: 0.04482422396540642
+Epoch: [184/200], Step: [200/522], Loss: 0.023049332201480865
+Epoch: [184/200], Step: [300/522], Loss: 0.04082281142473221
+Epoch: [184/200], Step: [400/522], Loss: 0.07481713593006134
+Epoch: [184/200], Step: [500/522], Loss: 0.1311293989419937
+text loss: tensor(0.5094)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [185/200], Step: [100/522], Loss: 0.0690024197101593
+Epoch: [185/200], Step: [200/522], Loss: 0.060645319521427155
+Epoch: [185/200], Step: [300/522], Loss: 0.03500360623002052
+Epoch: [185/200], Step: [400/522], Loss: 0.03209136798977852
+Epoch: [185/200], Step: [500/522], Loss: 0.05827649310231209
+text loss: tensor(0.5068)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [186/200], Step: [100/522], Loss: 0.1571246087551117
+Epoch: [186/200], Step: [200/522], Loss: 0.07121776044368744
+Epoch: [186/200], Step: [300/522], Loss: 0.08182992041110992
+Epoch: [186/200], Step: [400/522], Loss: 0.04899319261312485
+Epoch: [186/200], Step: [500/522], Loss: 0.05434633791446686
+text loss: tensor(0.5272)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [187/200], Step: [100/522], Loss: 0.04215932637453079
+Epoch: [187/200], Step: [200/522], Loss: 0.16548047959804535
+Epoch: [187/200], Step: [300/522], Loss: 0.06648913770914078
+Epoch: [187/200], Step: [400/522], Loss: 0.07627304643392563
+Epoch: [187/200], Step: [500/522], Loss: 0.04815579205751419
+text loss: tensor(0.4935)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [188/200], Step: [100/522], Loss: 0.04057348519563675
+Epoch: [188/200], Step: [200/522], Loss: 0.045832160860300064
+Epoch: [188/200], Step: [300/522], Loss: 0.0441618412733078
+Epoch: [188/200], Step: [400/522], Loss: 0.04329894110560417
+Epoch: [188/200], Step: [500/522], Loss: 0.08204701542854309
+text loss: tensor(0.4986)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [189/200], Step: [100/522], Loss: 0.10735964775085449
+Epoch: [189/200], Step: [200/522], Loss: 0.09579239785671234
+Epoch: [189/200], Step: [300/522], Loss: 0.05289012938737869
+Epoch: [189/200], Step: [400/522], Loss: 0.05587080866098404
+Epoch: [189/200], Step: [500/522], Loss: 0.07737419009208679
+text loss: tensor(0.4999)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [190/200], Step: [100/522], Loss: 0.04332714155316353
+Epoch: [190/200], Step: [200/522], Loss: 0.10375652462244034
+Epoch: [190/200], Step: [300/522], Loss: 0.08660311996936798
+Epoch: [190/200], Step: [400/522], Loss: 0.20414863526821136
+Epoch: [190/200], Step: [500/522], Loss: 0.03482966870069504
+text loss: tensor(0.4886)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [191/200], Step: [100/522], Loss: 0.05571405217051506
+Epoch: [191/200], Step: [200/522], Loss: 0.03668977692723274
+Epoch: [191/200], Step: [300/522], Loss: 0.07282207906246185
+Epoch: [191/200], Step: [400/522], Loss: 0.09934653341770172
+Epoch: [191/200], Step: [500/522], Loss: 0.093610018491745
+text loss: tensor(0.5093)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [192/200], Step: [100/522], Loss: 0.049675870686769485
+Epoch: [192/200], Step: [200/522], Loss: 0.0401308611035347
+Epoch: [192/200], Step: [300/522], Loss: 0.06145600602030754
+Epoch: [192/200], Step: [400/522], Loss: 0.04023833945393562
+Epoch: [192/200], Step: [500/522], Loss: 0.06256881356239319
+text loss: tensor(0.5329)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [193/200], Step: [100/522], Loss: 0.1016203761100769
+Epoch: [193/200], Step: [200/522], Loss: 0.04990336298942566
+Epoch: [193/200], Step: [300/522], Loss: 0.05919387936592102
+Epoch: [193/200], Step: [400/522], Loss: 0.04882854223251343
+Epoch: [193/200], Step: [500/522], Loss: 0.05797697603702545
+text loss: tensor(0.5147)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [194/200], Step: [100/522], Loss: 0.04590563848614693
+Epoch: [194/200], Step: [200/522], Loss: 0.11757035553455353
+Epoch: [194/200], Step: [300/522], Loss: 0.06275871396064758
+Epoch: [194/200], Step: [400/522], Loss: 0.06299746781587601
+Epoch: [194/200], Step: [500/522], Loss: 0.0496460422873497
+text loss: tensor(0.4940)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [195/200], Step: [100/522], Loss: 0.07089288532733917
+Epoch: [195/200], Step: [200/522], Loss: 0.03538164868950844
+Epoch: [195/200], Step: [300/522], Loss: 0.039428308606147766
+Epoch: [195/200], Step: [400/522], Loss: 0.07636834681034088
+Epoch: [195/200], Step: [500/522], Loss: 0.028122998774051666
+text loss: tensor(0.5009)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [196/200], Step: [100/522], Loss: 0.07122524827718735
+Epoch: [196/200], Step: [200/522], Loss: 0.06924150139093399
+Epoch: [196/200], Step: [300/522], Loss: 0.03709854185581207
+Epoch: [196/200], Step: [400/522], Loss: 0.03948880732059479
+Epoch: [196/200], Step: [500/522], Loss: 0.05910973250865936
+text loss: tensor(0.4978)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [197/200], Step: [100/522], Loss: 0.04053866118192673
+Epoch: [197/200], Step: [200/522], Loss: 0.06110640615224838
+Epoch: [197/200], Step: [300/522], Loss: 0.049671970307826996
+Epoch: [197/200], Step: [400/522], Loss: 0.07493201643228531
+Epoch: [197/200], Step: [500/522], Loss: 0.06348879635334015
+text loss: tensor(0.4910)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [198/200], Step: [100/522], Loss: 0.06230170279741287
+Epoch: [198/200], Step: [200/522], Loss: 0.021799467504024506
+Epoch: [198/200], Step: [300/522], Loss: 0.05639200285077095
+Epoch: [198/200], Step: [400/522], Loss: 0.02652253955602646
+Epoch: [198/200], Step: [500/522], Loss: 0.04681801795959473
+text loss: tensor(0.4993)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [199/200], Step: [100/522], Loss: 0.04835814982652664
+Epoch: [199/200], Step: [200/522], Loss: 0.07844588160514832
+Epoch: [199/200], Step: [300/522], Loss: 0.05269654095172882
+Epoch: [199/200], Step: [400/522], Loss: 0.02485262230038643
+Epoch: [199/200], Step: [500/522], Loss: 0.05522173270583153
+text loss: tensor(0.4979)
+RMSE: nan deg/s
+median of relative error: nan
+Epoch: [200/200], Step: [100/522], Loss: 0.1612231582403183
+Epoch: [200/200], Step: [200/522], Loss: 0.050470925867557526
+Epoch: [200/200], Step: [300/522], Loss: 0.07074429094791412
+Epoch: [200/200], Step: [400/522], Loss: 0.04294011741876602
+Epoch: [200/200], Step: [500/522], Loss: 0.05870717763900757
+text loss: tensor(0.5214)
+RMSE: nan deg/s
+median of relative error: nan
+text loss: tensor(0.5214)
+RMSE: nan deg/s
+median of relative error: nan
