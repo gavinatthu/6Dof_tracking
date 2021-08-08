@@ -6,6 +6,7 @@ from tqdm import tqdm
 from data_loader.testing_6Dof import TestDatabase, TrainDatabase
 from model.loss import compute_loss_snn_6Dof
 from model.metric import medianRelativeError, rmse
+from torch.utils.tensorboard import SummaryWriter   
 from .gpu import moveToGPUDevice
 from .tbase import TBase
 from model.SNN_cnn_6Dof import *
@@ -79,6 +80,8 @@ class Trainer(TBase):
 
         act_fun = ActFun.apply
         self.hebb_tuple = self.net.produce_hebb()
+        #print(self.output_dir)
+        writer = SummaryWriter(self.output_dir)
 
         optimizer = torch.optim.Adam(self.net.parameters(), lr=learning_rate)
         for epoch in range(num_epochs):
@@ -94,7 +97,7 @@ class Trainer(TBase):
 
 
                 loss = compute_loss_snn_6Dof(ang_vel_pred, ang_vel_gt)
-                
+
                 loss.backward()
                 optimizer.step()
                 ang_vel_pred = ang_vel_pred.unsqueeze(2)
@@ -103,7 +106,11 @@ class Trainer(TBase):
                 if (i+1) % 100 == 0:
                     print('Epoch: [{}/{}], Step: [{}/{}], Loss: {}'
                         .format(epoch+1, num_epochs, i+1, len(self.train_loader), loss.item()))
+            
+            writer.add_scalar('train loss', loss, global_step=epoch)
             self.test()
+            writer.add_scalar('test loss', self.test_loss, global_step=epoch)
+            
         #if self.write_output:
             #self.data_collector.writeToDisk(self.output_dir)
         #self.data_collector.printErrors()
@@ -130,7 +137,9 @@ class Trainer(TBase):
                 #print('test loss:', loss)
                 self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
         loss_list = torch.tensor(loss_list)
-        print('text loss:', torch.mean(loss_list))
+        
+        self.test_loss = torch.mean(loss_list)
+        print('test loss:', self.test_loss)
         if self.write_output:
             self.data_collector.writeToDisk(self.output_dir)
         self.data_collector.printErrors()
