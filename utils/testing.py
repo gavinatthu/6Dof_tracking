@@ -6,6 +6,7 @@ from tqdm import tqdm
 from data_loader.testing import TestDatabase, TrainDatabase
 from model.loss import compute_loss, compute_loss_snn
 from model.metric import medianRelativeError, rmse
+from torch.utils.tensorboard import SummaryWriter
 from .gpu import moveToGPUDevice
 from .tbase import TBase
 from model.SNN_cnn import *
@@ -77,9 +78,11 @@ class Trainer(TBase):
 
         act_fun = ActFun.apply
         self.hebb_tuple = self.net.produce_hebb()
+        writer = SummaryWriter(self.output_dir)
 
         optimizer = torch.optim.Adam(self.net.parameters(), lr=learning_rate)
         for epoch in range(num_epochs):
+            # train
             for i , data in enumerate(self.train_loader):
                 self.net.zero_grad()
                 optimizer.zero_grad()
@@ -101,12 +104,19 @@ class Trainer(TBase):
                 if (i+1) % 100 == 0:
                     print('Epoch: [{}/{}], Step: [{}/{}], Loss: {}'
                         .format(epoch+1, num_epochs, i+1, len(self.train_loader), loss.item()))
+                    writer.add_scalar('train loss', loss, global_step=i+epoch*len(self.train_loader))
+            
+            # validation
+            self.test()
+            writer.add_scalar('test loss', self.test_loss, global_step=epoch)
         if self.write_output:
             self.data_collector.writeToDisk(self.output_dir)
         self.data_collector.printErrors()
 
+
     def test(self):
         self.net = self.net.eval()
+        loss_list =[]
 
         with torch.no_grad():
             for data in tqdm(self.test_loader, desc='testing'):
@@ -119,10 +129,14 @@ class Trainer(TBase):
                 ang_vel_pred = ang_vel_pred.unsqueeze(2)
                 ang_vel_pred = ang_vel_pred.repeat(1,1,100)    #torch.Size([24, 3, 100])
 
+                loss = compute_loss_snn(ang_vel_pred, ang_vel_gt)
+                loss_list.append(loss)
+
                 self.data_collector.append(ang_vel_pred, ang_vel_gt, data['file_number'])
         if self.write_output:
             self.data_collector.writeToDisk(self.output_dir)
         self.data_collector.printErrors()
+        self.test_loss = torch.mean(loss_list)
 
 class Trainer_old(TBase):
     def __init__(self, data_dir, write, log_config, general_config):
